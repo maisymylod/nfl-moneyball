@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import logging
+import math
 import pickle
 from datetime import datetime, timezone
 from pathlib import Path
@@ -44,6 +45,21 @@ PLAYER_COLS = [
 log = logging.getLogger(__name__)
 
 
+def _clean(v):
+    """JSON-safe coercion: NaN/inf become None, numpy bools/ints/floats become Python."""
+    if v is None:
+        return None
+    if isinstance(v, float):
+        return None if (math.isnan(v) or math.isinf(v)) else v
+    if hasattr(v, "item"):
+        try:
+            v = v.item()
+        except (ValueError, AttributeError):
+            return v
+        return _clean(v)
+    return v
+
+
 def _records(df: pd.DataFrame, cols: list[str] | None = None) -> list[dict]:
     if cols is not None:
         cols = [c for c in cols if c in df.columns]
@@ -51,7 +67,8 @@ def _records(df: pd.DataFrame, cols: list[str] | None = None) -> list[dict]:
     out = df.copy()
     for c in out.select_dtypes(include="number").columns:
         out[c] = out[c].astype(float).round(3)
-    return out.where(out.notna(), None).to_dict(orient="records")
+    records = out.to_dict(orient="records")
+    return [{k: _clean(v) for k, v in r.items()} for r in records]
 
 
 def _load_movers() -> list[dict]:
@@ -148,7 +165,9 @@ def export() -> None:
 
     out = DOCS / "data.json"
     with open(out, "w") as f:
-        json.dump(data, f, indent=2)
+        # allow_nan=False catches any sneaky NaN that bypassed _clean — the
+        # browser can't parse them, so fail the build loudly instead.
+        json.dump(data, f, indent=2, allow_nan=False)
     log.info("dashboard data -> %s (%d players)", out, len(data["players"]))
 
 
