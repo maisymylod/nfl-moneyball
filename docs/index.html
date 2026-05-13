@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>nfl-moneyball</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="title-row">
+        <div>
+          <h1>nfl-moneyball</h1>
+          <p class="subtitle">Roster-value model for NFL skill positions. Retrains daily via GitHub Actions.</p>
+        </div>
+        <div class="header-links">
+          <a href="https://github.com/maisymylod/nfl-moneyball" target="_blank" rel="noopener">GitHub repo</a>
+        </div>
+      </div>
+      <div class="metrics-row" id="metrics-row">
+        <div class="metric"><span class="metric-label">Season</span><span class="metric-value" id="m-season">-</span></div>
+        <div class="metric"><span class="metric-label">Players (current)</span><span class="metric-value" id="m-total">-</span></div>
+        <div class="metric"><span class="metric-label">Eligible</span><span class="metric-value" id="m-eligible">-</span></div>
+        <div class="metric"><span class="metric-label">Model trained</span><span class="metric-value" id="m-trained">-</span></div>
+        <div class="metric"><span class="metric-label">Data refreshed</span><span class="metric-value" id="m-generated">-</span></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="filters">
+      <div class="filter">
+        <label>Position</label>
+        <div class="chip-row" id="filter-position">
+          <label class="chip"><input type="checkbox" value="QB" checked /> QB</label>
+          <label class="chip"><input type="checkbox" value="RB" checked /> RB</label>
+          <label class="chip"><input type="checkbox" value="WR" checked /> WR</label>
+          <label class="chip"><input type="checkbox" value="TE" checked /> TE</label>
+        </div>
+      </div>
+      <div class="filter">
+        <label for="filter-snaps">Min offense snaps: <span id="filter-snaps-value">200</span></label>
+        <input type="range" id="filter-snaps" min="0" max="1200" step="50" value="200" />
+      </div>
+      <div class="filter">
+        <label for="filter-confidence">Min confidence</label>
+        <select id="filter-confidence">
+          <option value="Low">Low</option>
+          <option value="Medium" selected>Medium</option>
+          <option value="High">High</option>
+        </select>
+      </div>
+      <div class="filter">
+        <label class="chip">
+          <input type="checkbox" id="filter-matched" checked />
+          Only matched contracts
+        </label>
+      </div>
+    </section>
+
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-tab="bargains">Bargains</button>
+      <button class="tab" data-tab="overpaid">Overpaid</button>
+      <button class="tab" data-tab="lookup">Player lookup</button>
+      <button class="tab" data-tab="analytics">Analytics</button>
+      <button class="tab" data-tab="diagnostic">Diagnostic</button>
+    </nav>
+
+    <main>
+      <section class="tab-panel active" id="panel-bargains">
+        <h2>Top bargains</h2>
+        <p class="caption">Players whose production exceeds the per-position model's prediction the most, scaled by APY. Players with missing contracts (NaN value score) are excluded by default.</p>
+        <div id="bargains-table"></div>
+      </section>
+
+      <section class="tab-panel" id="panel-overpaid">
+        <h2>Top overpaid</h2>
+        <p class="caption">Players whose production trails the per-position model's prediction the most, scaled by APY.</p>
+        <div id="overpaid-table"></div>
+      </section>
+
+      <section class="tab-panel" id="panel-lookup">
+        <h2>Player lookup</h2>
+        <div class="lookup-row">
+          <input type="search" id="lookup-input" placeholder="Search a player..." autocomplete="off" />
+        </div>
+        <div id="lookup-suggestions" class="suggestions"></div>
+        <div id="lookup-card" class="player-card"></div>
+      </section>
+
+      <section class="tab-panel" id="panel-analytics">
+        <h2>Activity &amp; analytics</h2>
+        <p class="caption">Every daily run appends to <code>data/processed/run_history.parquet</code> and snapshots player rankings. Charts below are built from those committed artifacts.</p>
+        <div class="analytics-metrics" id="analytics-metrics"></div>
+        <div class="chart-grid">
+          <div class="chart-card">
+            <h3>Players in the ranked table over time</h3>
+            <canvas id="chart-counts"></canvas>
+          </div>
+          <div class="chart-card">
+            <h3>Model R² per position</h3>
+            <canvas id="chart-r2"></canvas>
+          </div>
+          <div class="chart-card">
+            <h3>Training-set size per position</h3>
+            <canvas id="chart-train"></canvas>
+          </div>
+        </div>
+        <h3>Top movers since prior run</h3>
+        <div class="movers-row">
+          <div class="movers-col">
+            <h4>Risers</h4>
+            <div id="movers-up"></div>
+          </div>
+          <div class="movers-col">
+            <h4>Fallers</h4>
+            <div id="movers-down"></div>
+          </div>
+        </div>
+        <h3>Full run history</h3>
+        <div id="history-table"></div>
+      </section>
+
+      <section class="tab-panel" id="panel-diagnostic">
+        <h2>Diagnostic</h2>
+        <p class="caption">Players excluded from the ranked tables are listed here for audit. Reason codes: <code>low_sample</code> (under 100 snaps), <code>no_contract_match</code>, <code>fuzzy_match_below_threshold</code>.</p>
+        <h3>Contract match quality, by position</h3>
+        <div id="breakdown-table"></div>
+        <h3 id="excluded-heading">Excluded players</h3>
+        <div id="excluded-table"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built with vanilla JS + <a href="https://www.chartjs.org/" target="_blank" rel="noopener">Chart.js</a>. Source: <a href="https://github.com/maisymylod/nfl-moneyball" target="_blank" rel="noopener">github.com/maisymylod/nfl-moneyball</a></p>
+    </footer>
+  </div>
+</body>
+</html>
