@@ -46,6 +46,9 @@ jobs:
       - name: Summary
         run: python -m src.reporting.summary
 
+      - name: Append run history & snapshot
+        run: python -m src.reporting.history
+
       - name: Run tests
         run: |
           pip install pytest
