@@ -1,0 +1,64 @@
+name: daily-train
+
+on:
+  schedule:
+    - cron: '0 11 * * *'   # 7am ET / 4am PT
+  workflow_dispatch:
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fetch stats
+        run: python -m src.pipeline.fetch_stats
+
+      - name: Fetch contracts
+        run: python -m src.pipeline.fetch_contracts
+
+      - name: Merge
+        run: python -m src.pipeline.merge
+
+      - name: Train model
+        run: python -m src.model.train
+
+      - name: Score
+        run: python -m src.model.score
+
+      - name: Diagnostic
+        run: python -m src.reporting.diagnostic
+
+      - name: Summary
+        run: python -m src.reporting.summary
+
+      - name: Run tests
+        run: |
+          pip install pytest
+          pytest -q
+
+      - name: Commit refreshed artifacts
+        run: |
+          git config user.name "nfl-moneyball-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/processed data/diagnostic models reports
+          if git diff --staged --quiet; then
+            echo "no changes"
+          else
+            git commit -m "daily retrain $(date -u +%Y-%m-%d)"
+            git push
+          fi
