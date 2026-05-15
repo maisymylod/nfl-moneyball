@@ -1,6 +1,8 @@
 # nfl-moneyball
 
-A roster-value model for NFL skill-position players that compares on-field production to contract cost, with disciplined handling of missing contract data. Retrains itself every day via GitHub Actions and publishes results to a public Streamlit dashboard.
+**Live dashboard:** [maisymylod.github.io/nfl-moneyball](https://maisymylod.github.io/nfl-moneyball/)
+
+A roster-value model for NFL skill-position players that compares on-field production to contract cost, with disciplined handling of missing contract data. Retrains itself every day via GitHub Actions and publishes results to a static dashboard hosted on GitHub Pages.
 
 ## What it does
 
@@ -48,6 +50,11 @@ python -m src.model.score
 python -m src.reporting.diagnostic
 python -m src.reporting.summary
 
+python -m src.reporting.dashboard_export   # compiles docs/data.json
+
+# Static dashboard: open docs/index.html in a browser, or
+python -m http.server 8000 --directory docs
+# Optional: the legacy Streamlit dashboard
 streamlit run app/streamlit_app.py
 ```
 
@@ -56,12 +63,13 @@ streamlit run app/streamlit_app.py
 ```
 src/pipeline/    data fetchers and merger
 src/model/       feature builders, training, scoring
-src/reporting/   diagnostic and summary writers
-app/             Streamlit dashboard
-data/processed/  merged player table (committed)
-data/diagnostic/ excluded/flagged players for audit (committed)
-models/          fitted model artifacts (committed)
-reports/         summary.json for the dashboard (committed)
+src/reporting/   diagnostic, summary, history, dashboard_export
+app/             legacy Streamlit dashboard (optional)
+docs/            static HTML dashboard served by GitHub Pages
+data/processed/  merged player table + run history + snapshots
+data/diagnostic/ excluded/flagged players for audit
+models/          fitted model artifacts
+reports/         summary.json
 ```
 
 ## Scope
