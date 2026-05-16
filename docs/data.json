@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-15T14:10:55.346334+00:00",
+  "generated_at": "2026-05-16T11:23:15.573619+00:00",
   "current_season": 2024,
-  "model_trained_at": "2026-05-15",
+  "model_trained_at": "2026-05-16",
   "model_metrics": {
     "QB": {
       "n_train": 130,
@@ -24,7 +24,7 @@
     "total_current": 569,
     "eligible_for_ranking": 316,
     "low_sample": 159,
-    "no_match": 151
+    "no_match": 148
   },
   "players": [
     {
@@ -1406,6 +1406,26 @@
       "low_sample": false,
       "value_score": 3.132,
       "confidence": "High"
+    },
+    {
+      "player_id": "00-0032918",
+      "player_name": "C.J. Ham",
+      "position": "RB",
+      "team": "MIN",
+      "age": 31.0,
+      "offense_snaps": null,
+      "production": -3.233,
+      "expected_production": -6.42,
+      "production_residual": 3.186,
+      "apy": 1040000.0,
+      "apy_millions": 1.04,
+      "cap_hit": null,
+      "contract_source": "overthecap",
+      "contract_match_quality": "fuzzy_low",
+      "contract_match_score": 85.5,
+      "low_sample": true,
+      "value_score": 3.064,
+      "confidence": "Low"
     },
     {
       "player_id": "00-0034613",
@@ -6288,6 +6308,26 @@
       "confidence": "Low"
     },
     {
+      "player_id": "00-0038920",
+      "player_name": "John Shenker",
+      "position": "TE",
+      "team": "LV",
+      "age": 25.0,
+      "offense_snaps": null,
+      "production": 0.374,
+      "expected_production": 1.182,
+      "production_residual": -0.808,
+      "apy": 1040000.0,
+      "apy_millions": 1.04,
+      "cap_hit": null,
+      "contract_source": "overthecap",
+      "contract_match_quality": "fuzzy_low",
+      "contract_match_score": 85.5,
+      "low_sample": true,
+      "value_score": -0.777,
+      "confidence": "Low"
+    },
+    {
       "player_id": "00-0035261",
       "player_name": "Tony Pollard",
       "position": "RB",
@@ -8402,7 +8442,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 59.375,
+      "contract_match_score": 64.0,
       "low_sample": false,
       "value_score": null,
       "confidence": "Low"
@@ -8482,7 +8522,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 51.154,
+      "contract_match_score": 53.846,
       "low_sample": false,
       "value_score": null,
       "confidence": "Low"
@@ -8882,27 +8922,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 56.0,
-      "low_sample": true,
-      "value_score": null,
-      "confidence": "Low"
-    },
-    {
-      "player_id": "00-0032918",
-      "player_name": "C.J. Ham",
-      "position": "RB",
-      "team": "MIN",
-      "age": 31.0,
-      "offense_snaps": null,
-      "production": -3.233,
-      "expected_production": -6.42,
-      "production_residual": 3.186,
-      "apy": null,
-      "apy_millions": null,
-      "cap_hit": null,
-      "contract_source": null,
-      "contract_match_quality": "no_match",
-      "contract_match_score": 65.455,
+      "contract_match_score": 65.769,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -9037,15 +9057,15 @@
       "production": 18.696,
       "expected_production": 10.892,
       "production_residual": 7.803,
-      "apy": null,
-      "apy_millions": null,
+      "apy": 0.0,
+      "apy_millions": 0.0,
       "cap_hit": null,
-      "contract_source": null,
-      "contract_match_quality": "no_match",
-      "contract_match_score": 54.545,
+      "contract_source": "overthecap",
+      "contract_match_quality": "exact",
+      "contract_match_score": 100.0,
       "low_sample": false,
       "value_score": null,
-      "confidence": "Low"
+      "confidence": "Medium"
     },
     {
       "player_id": "00-0033376",
@@ -9102,7 +9122,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 63.158,
+      "contract_match_score": 66.667,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -9202,7 +9222,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 60.87,
+      "contract_match_score": 63.0,
       "low_sample": false,
       "value_score": null,
       "confidence": "Low"
@@ -9262,7 +9282,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 60.87,
+      "contract_match_score": 63.636,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -9302,7 +9322,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 57.143,
+      "contract_match_score": 70.0,
       "low_sample": false,
       "value_score": null,
       "confidence": "Low"
@@ -9422,7 +9442,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 51.154,
+      "contract_match_score": 60.8,
       "low_sample": false,
       "value_score": null,
       "confidence": "Low"
@@ -9782,7 +9802,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 56.25,
+      "contract_match_score": 67.5,
       "low_sample": false,
       "value_score": null,
       "confidence": "Low"
@@ -10062,7 +10082,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 53.846,
+      "contract_match_score": 72.0,
       "low_sample": false,
       "value_score": null,
       "confidence": "Low"
@@ -10202,7 +10222,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 51.429,
+      "contract_match_score": 58.462,
       "low_sample": false,
       "value_score": null,
       "confidence": "Low"
@@ -10302,7 +10322,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 56.0,
+      "contract_match_score": 58.065,
       "low_sample": false,
       "value_score": null,
       "confidence": "Low"
@@ -10362,7 +10382,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 53.846,
+      "contract_match_score": 60.0,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -10442,7 +10462,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 48.276,
+      "contract_match_score": 60.0,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -10462,7 +10482,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 50.0,
+      "contract_match_score": 61.538,
       "low_sample": false,
       "value_score": null,
       "confidence": "Low"
@@ -10522,7 +10542,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 52.174,
+      "contract_match_score": 55.385,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -10722,7 +10742,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 59.259,
+      "contract_match_score": 63.333,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -11102,7 +11122,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 46.667,
+      "contract_match_score": 67.857,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -11122,7 +11142,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 55.172,
+      "contract_match_score": 64.0,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -11164,26 +11184,6 @@
       "contract_match_quality": "no_match",
       "contract_match_score": 56.296,
       "low_sample": false,
-      "value_score": null,
-      "confidence": "Low"
-    },
-    {
-      "player_id": "00-0038920",
-      "player_name": "John Shenker",
-      "position": "TE",
-      "team": "LV",
-      "age": 25.0,
-      "offense_snaps": null,
-      "production": 0.374,
-      "expected_production": 1.182,
-      "production_residual": -0.808,
-      "apy": null,
-      "apy_millions": null,
-      "cap_hit": null,
-      "contract_source": null,
-      "contract_match_quality": "no_match",
-      "contract_match_score": 58.333,
-      "low_sample": true,
       "value_score": null,
       "confidence": "Low"
     },
@@ -11262,7 +11262,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 59.259,
+      "contract_match_score": 62.069,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -11282,7 +11282,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 58.333,
+      "contract_match_score": 67.5,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -11382,7 +11382,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 62.069,
+      "contract_match_score": 63.529,
       "low_sample": false,
       "value_score": null,
       "confidence": "Low"
@@ -11489,6 +11489,33 @@
       "te_r2": 0.929,
       "te_n_train": 182.0,
       "model_trained_at": "2026-05-15"
+    },
+    {
+      "run_at": "2026-05-16T11:23:13.406998+00:00",
+      "run_date": "2026-05-16",
+      "current_season": 2024.0,
+      "n_current": 569.0,
+      "n_eligible": 316.0,
+      "n_low_sample": 159.0,
+      "n_no_match": 148.0,
+      "n_with_contract": 421.0,
+      "qb_n_current": 78.0,
+      "qb_n_eligible": 45.0,
+      "rb_n_current": 145.0,
+      "rb_n_eligible": 66.0,
+      "wr_n_current": 227.0,
+      "wr_n_eligible": 127.0,
+      "te_n_current": 119.0,
+      "te_n_eligible": 78.0,
+      "qb_r2": 0.973,
+      "qb_n_train": 130.0,
+      "rb_r2": 0.829,
+      "rb_n_train": 209.0,
+      "wr_r2": 0.836,
+      "wr_n_train": 322.0,
+      "te_r2": 0.929,
+      "te_n_train": 182.0,
+      "model_trained_at": "2026-05-16"
     }
   ],
   "top_movers": [
@@ -15548,8 +15575,8 @@
       "position": "RB",
       "team": "MIN",
       "offense_snaps": null,
-      "contract_match_quality": "no_match",
-      "contract_match_score": 65.455,
+      "contract_match_quality": "fuzzy_low",
+      "contract_match_score": 85.5,
       "exclusion_reason": "low_sample"
     },
     {
@@ -15736,7 +15763,7 @@
       "team": "DAL",
       "offense_snaps": 24.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 60.87,
+      "contract_match_score": 63.636,
       "exclusion_reason": "low_sample"
     },
     {
@@ -15813,7 +15840,7 @@
       "team": "MIA",
       "offense_snaps": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 52.174,
+      "contract_match_score": 55.385,
       "exclusion_reason": "low_sample"
     },
     {
@@ -15835,7 +15862,7 @@
       "team": "DAL",
       "offense_snaps": 52.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 55.172,
+      "contract_match_score": 64.0,
       "exclusion_reason": "low_sample"
     },
     {
@@ -16121,7 +16148,7 @@
       "team": "ATL",
       "offense_snaps": 19.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 59.259,
+      "contract_match_score": 62.069,
       "exclusion_reason": "low_sample"
     },
     {
@@ -16220,7 +16247,7 @@
       "team": "PHI",
       "offense_snaps": 12.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 63.158,
+      "contract_match_score": 66.667,
       "exclusion_reason": "low_sample"
     },
     {
@@ -16230,8 +16257,8 @@
       "position": "TE",
       "team": "LV",
       "offense_snaps": null,
-      "contract_match_quality": "no_match",
-      "contract_match_score": 58.333,
+      "contract_match_quality": "fuzzy_low",
+      "contract_match_score": 85.5,
       "exclusion_reason": "low_sample"
     },
     {
@@ -16308,7 +16335,7 @@
       "team": "TEN",
       "offense_snaps": 4.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 53.846,
+      "contract_match_score": 60.0,
       "exclusion_reason": "low_sample"
     },
     {
@@ -16341,7 +16368,7 @@
       "team": "KC",
       "offense_snaps": 14.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 59.259,
+      "contract_match_score": 63.333,
       "exclusion_reason": "low_sample"
     },
     {
@@ -16374,7 +16401,7 @@
       "team": "SF",
       "offense_snaps": 3.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 48.276,
+      "contract_match_score": 60.0,
       "exclusion_reason": "low_sample"
     },
     {
@@ -16627,7 +16654,7 @@
       "team": "LV",
       "offense_snaps": 44.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 58.333,
+      "contract_match_score": 67.5,
       "exclusion_reason": "low_sample"
     },
     {
@@ -16660,7 +16687,7 @@
       "team": "MIA",
       "offense_snaps": 29.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 56.0,
+      "contract_match_score": 65.769,
       "exclusion_reason": "low_sample"
     },
     {
@@ -16693,7 +16720,7 @@
       "team": "LAC",
       "offense_snaps": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 46.667,
+      "contract_match_score": 67.857,
       "exclusion_reason": "low_sample"
     },
     {
@@ -17078,7 +17105,7 @@
       "team": "NE",
       "offense_snaps": 359.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 56.0,
+      "contract_match_score": 58.065,
       "exclusion_reason": "no_contract_match"
     },
     {
@@ -17232,7 +17259,7 @@
       "team": "NO",
       "offense_snaps": 148.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 56.25,
+      "contract_match_score": 67.5,
       "exclusion_reason": "no_contract_match"
     },
     {
@@ -17419,7 +17446,7 @@
       "team": "NE",
       "offense_snaps": 107.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 53.846,
+      "contract_match_score": 72.0,
       "exclusion_reason": "no_contract_match"
     },
     {
@@ -17463,7 +17490,7 @@
       "team": "CIN",
       "offense_snaps": 131.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 62.069,
+      "contract_match_score": 63.529,
       "exclusion_reason": "no_contract_match"
     },
     {
@@ -17474,7 +17501,7 @@
       "team": "HOU",
       "offense_snaps": 645.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 57.143,
+      "contract_match_score": 70.0,
       "exclusion_reason": "no_contract_match"
     },
     {
@@ -17485,7 +17512,7 @@
       "team": "MIA",
       "offense_snaps": 626.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 60.87,
+      "contract_match_score": 63.0,
       "exclusion_reason": "no_contract_match"
     },
     {
@@ -17551,7 +17578,7 @@
       "team": "CHI",
       "offense_snaps": 850.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 59.375,
+      "contract_match_score": 64.0,
       "exclusion_reason": "no_contract_match"
     },
     {
@@ -17562,7 +17589,7 @@
       "team": "NYJ",
       "offense_snaps": 106.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 50.0,
+      "contract_match_score": 61.538,
       "exclusion_reason": "no_contract_match"
     },
     {
@@ -17683,7 +17710,7 @@
       "team": "MIA",
       "offense_snaps": 119.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 51.154,
+      "contract_match_score": 53.846,
       "exclusion_reason": "no_contract_match"
     },
     {
@@ -17738,7 +17765,7 @@
       "team": "MIA",
       "offense_snaps": 120.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 51.154,
+      "contract_match_score": 60.8,
       "exclusion_reason": "no_contract_match"
     },
     {
@@ -17803,17 +17830,6 @@
       "position": "TE",
       "team": "NO",
       "offense_snaps": 225.0,
-      "contract_match_quality": "no_match",
-      "contract_match_score": 54.545,
-      "exclusion_reason": "no_contract_match"
-    },
-    {
-      "season": 2024.0,
-      "player_id": "00-0033375",
-      "player_name": "Tim Patrick",
-      "position": "WR",
-      "team": "DET",
-      "offense_snaps": 671.0,
       "contract_match_quality": "no_match",
       "contract_match_score": 54.545,
       "exclusion_reason": "no_contract_match"
@@ -17914,7 +17930,7 @@
       "team": "CIN",
       "offense_snaps": 297.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 51.429,
+      "contract_match_score": 58.462,
       "exclusion_reason": "no_contract_match"
     },
     {
@@ -17964,12 +17980,12 @@
     {
       "position": "RB",
       "contract_match_quality": "fuzzy_low",
-      "count": 4.0
+      "count": 5.0
     },
     {
       "position": "RB",
       "contract_match_quality": "no_match",
-      "count": 51.0
+      "count": 50.0
     },
     {
       "position": "TE",
@@ -17979,17 +17995,17 @@
     {
       "position": "TE",
       "contract_match_quality": "fuzzy_low",
-      "count": 2.0
+      "count": 3.0
     },
     {
       "position": "TE",
       "contract_match_quality": "no_match",
-      "count": 26.0
+      "count": 25.0
     },
     {
       "position": "WR",
       "contract_match_quality": "exact",
-      "count": 159.0
+      "count": 160.0
     },
     {
       "position": "WR",
@@ -17999,7 +18015,7 @@
     {
       "position": "WR",
       "contract_match_quality": "no_match",
-      "count": 61.0
+      "count": 60.0
     }
   ]
 }

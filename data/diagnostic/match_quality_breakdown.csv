@@ -3,11 +3,11 @@ QB,exact,64
 QB,fuzzy_low,1
 QB,no_match,13
 RB,exact,90
-RB,fuzzy_low,4
-RB,no_match,51
+RB,fuzzy_low,5
+RB,no_match,50
 TE,exact,91
-TE,fuzzy_low,2
-TE,no_match,26
-WR,exact,159
+TE,fuzzy_low,3
+TE,no_match,25
+WR,exact,160
 WR,fuzzy_low,7
-WR,no_match,61
+WR,no_match,60
