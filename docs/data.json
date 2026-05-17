@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-16T11:23:15.573619+00:00",
+  "generated_at": "2026-05-17T11:26:59.109076+00:00",
   "current_season": 2024,
-  "model_trained_at": "2026-05-16",
+  "model_trained_at": "2026-05-17",
   "model_metrics": {
     "QB": {
       "n_train": 130,
@@ -10222,7 +10222,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 58.462,
+      "contract_match_score": 51.429,
       "low_sample": false,
       "value_score": null,
       "confidence": "Low"
@@ -11516,6 +11516,33 @@
       "te_r2": 0.929,
       "te_n_train": 182.0,
       "model_trained_at": "2026-05-16"
+    },
+    {
+      "run_at": "2026-05-17T11:26:56.781379+00:00",
+      "run_date": "2026-05-17",
+      "current_season": 2024.0,
+      "n_current": 569.0,
+      "n_eligible": 316.0,
+      "n_low_sample": 159.0,
+      "n_no_match": 148.0,
+      "n_with_contract": 421.0,
+      "qb_n_current": 78.0,
+      "qb_n_eligible": 45.0,
+      "rb_n_current": 145.0,
+      "rb_n_eligible": 66.0,
+      "wr_n_current": 227.0,
+      "wr_n_eligible": 127.0,
+      "te_n_current": 119.0,
+      "te_n_eligible": 78.0,
+      "qb_r2": 0.973,
+      "qb_n_train": 130.0,
+      "rb_r2": 0.829,
+      "rb_n_train": 209.0,
+      "wr_r2": 0.836,
+      "wr_n_train": 322.0,
+      "te_r2": 0.929,
+      "te_n_train": 182.0,
+      "model_trained_at": "2026-05-17"
     }
   ],
   "top_movers": [
@@ -12139,6 +12166,15 @@
       "value_score": 3.132,
       "value_score_delta": 0.0,
       "confidence": "High"
+    },
+    {
+      "player_name": "C.J. Ham",
+      "position": "RB",
+      "team": "MIN",
+      "value_score_prev": 3.064,
+      "value_score": 3.064,
+      "value_score_delta": 0.0,
+      "confidence": "Low"
     },
     {
       "player_name": "Tanner Hudson",
@@ -14333,6 +14369,15 @@
       "team": "TEN",
       "value_score_prev": -0.767,
       "value_score": -0.767,
+      "value_score_delta": 0.0,
+      "confidence": "Low"
+    },
+    {
+      "player_name": "John Shenker",
+      "position": "TE",
+      "team": "LV",
+      "value_score_prev": -0.777,
+      "value_score": -0.777,
       "value_score_delta": 0.0,
       "confidence": "Low"
     },
@@ -17930,7 +17975,7 @@
       "team": "CIN",
       "offense_snaps": 297.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 58.462,
+      "contract_match_score": 51.429,
       "exclusion_reason": "no_contract_match"
     },
     {
