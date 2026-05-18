@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-17T11:26:59.109076+00:00",
+  "generated_at": "2026-05-18T12:10:43.654964+00:00",
   "current_season": 2024,
-  "model_trained_at": "2026-05-17",
+  "model_trained_at": "2026-05-18",
   "model_metrics": {
     "QB": {
       "n_train": 130,
@@ -11543,6 +11543,33 @@
       "te_r2": 0.929,
       "te_n_train": 182.0,
       "model_trained_at": "2026-05-17"
+    },
+    {
+      "run_at": "2026-05-18T12:10:41.385995+00:00",
+      "run_date": "2026-05-18",
+      "current_season": 2024.0,
+      "n_current": 569.0,
+      "n_eligible": 316.0,
+      "n_low_sample": 159.0,
+      "n_no_match": 148.0,
+      "n_with_contract": 421.0,
+      "qb_n_current": 78.0,
+      "qb_n_eligible": 45.0,
+      "rb_n_current": 145.0,
+      "rb_n_eligible": 66.0,
+      "wr_n_current": 227.0,
+      "wr_n_eligible": 127.0,
+      "te_n_current": 119.0,
+      "te_n_eligible": 78.0,
+      "qb_r2": 0.973,
+      "qb_n_train": 130.0,
+      "rb_r2": 0.829,
+      "rb_n_train": 209.0,
+      "wr_r2": 0.836,
+      "wr_n_train": 322.0,
+      "te_r2": 0.929,
+      "te_n_train": 182.0,
+      "model_trained_at": "2026-05-18"
     }
   ],
   "top_movers": [
