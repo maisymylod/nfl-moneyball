@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-18T12:10:43.654964+00:00",
+  "generated_at": "2026-05-19T12:03:13.554659+00:00",
   "current_season": 2024,
-  "model_trained_at": "2026-05-18",
+  "model_trained_at": "2026-05-19",
   "model_metrics": {
     "QB": {
       "n_train": 130,
@@ -9962,7 +9962,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 56.0,
+      "contract_match_score": 60.87,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -10462,7 +10462,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 60.0,
+      "contract_match_score": 48.276,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -11142,7 +11142,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 64.0,
+      "contract_match_score": 55.172,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -11570,6 +11570,33 @@
       "te_r2": 0.929,
       "te_n_train": 182.0,
       "model_trained_at": "2026-05-18"
+    },
+    {
+      "run_at": "2026-05-19T12:03:11.246413+00:00",
+      "run_date": "2026-05-19",
+      "current_season": 2024.0,
+      "n_current": 569.0,
+      "n_eligible": 316.0,
+      "n_low_sample": 159.0,
+      "n_no_match": 148.0,
+      "n_with_contract": 421.0,
+      "qb_n_current": 78.0,
+      "qb_n_eligible": 45.0,
+      "rb_n_current": 145.0,
+      "rb_n_eligible": 66.0,
+      "wr_n_current": 227.0,
+      "wr_n_eligible": 127.0,
+      "te_n_current": 119.0,
+      "te_n_eligible": 78.0,
+      "qb_r2": 0.973,
+      "qb_n_train": 130.0,
+      "rb_r2": 0.829,
+      "rb_n_train": 209.0,
+      "wr_r2": 0.836,
+      "wr_n_train": 322.0,
+      "te_r2": 0.929,
+      "te_n_train": 182.0,
+      "model_trained_at": "2026-05-19"
     }
   ],
   "top_movers": [
@@ -15934,7 +15961,7 @@
       "team": "DAL",
       "offense_snaps": 52.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 64.0,
+      "contract_match_score": 55.172,
       "exclusion_reason": "low_sample"
     },
     {
@@ -16473,7 +16500,7 @@
       "team": "SF",
       "offense_snaps": 3.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 60.0,
+      "contract_match_score": 48.276,
       "exclusion_reason": "low_sample"
     },
     {
@@ -16660,7 +16687,7 @@
       "team": "JAX",
       "offense_snaps": 7.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 56.0,
+      "contract_match_score": 60.87,
       "exclusion_reason": "low_sample"
     },
     {

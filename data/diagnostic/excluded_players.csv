@@ -55,7 +55,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0036898,Davis Mills,QB,HOU,72.0,exact,100.0,low_sample
 2024,00-0036620,Dee Eskridge,WR,MIA,,no_match,55.38461538461539,low_sample
 2024,00-0036425,DeeJay Dallas,RB,ARI,54.0,exact,100.0,low_sample
-2024,00-0038622,Deuce Vaughn,RB,DAL,52.0,no_match,64.0,low_sample
+2024,00-0038622,Deuce Vaughn,RB,DAL,52.0,no_match,55.172413793103445,low_sample
 2024,00-0037487,Deven Thompkins,WR,CAR,51.0,no_match,66.66666666666667,low_sample
 2024,00-0039754,Devin Culp,TE,TB,41.0,exact,100.0,low_sample
 2024,00-0039792,Devontez Walker,WR,BAL,60.0,exact,100.0,low_sample
@@ -104,7 +104,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0037216,Justyn Ross,WR,KC,14.0,no_match,63.33333333333332,low_sample
 2024,00-0036913,Kadarius Toney,WR,CLE,17.0,no_match,71.42857142857143,low_sample
 2024,00-0039589,Kameron Johnson,WR,TB,47.0,exact,100.0,low_sample
-2024,00-0036450,Ke'Shawn Vaughn,RB,SF,3.0,no_match,59.99999999999999,low_sample
+2024,00-0036450,Ke'Shawn Vaughn,RB,SF,3.0,no_match,48.275862068965516,low_sample
 2024,00-0038454,Keaton Mitchell,RB,BAL,36.0,exact,100.0,low_sample
 2024,00-0037422,Kendric Pryor,WR,CIN,19.0,exact,100.0,low_sample
 2024,00-0036842,Kene Nwangwu,RB,NYJ,1.0,exact,100.0,low_sample
@@ -121,7 +121,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0034208,Mike Boone,RB,CAR,43.0,fuzzy_low,85.5,low_sample
 2024,00-0034401,Mike White,QB,BUF,20.0,no_match,54.54545454545454,low_sample
 2024,00-0037300,Mike Woods,WR,CLE,,no_match,78.26086956521739,low_sample
-2024,00-0035311,Myles Gaskin,RB,JAX,7.0,no_match,56.00000000000001,low_sample
+2024,00-0035311,Myles Gaskin,RB,JAX,7.0,no_match,60.86956521739131,low_sample
 2024,00-0033319,Nick Mullens,QB,MIN,7.0,exact,100.0,low_sample
 2024,00-0038519,Nikko Remigio,WR,KC,42.0,exact,100.0,low_sample
 2024,00-0033376,Patrick Ricard,RB,BAL,,no_match,71.42857142857143,low_sample
