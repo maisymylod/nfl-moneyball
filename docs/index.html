@@ -66,6 +66,7 @@
       <button class="tab active" data-tab="bargains">Bargains</button>
       <button class="tab" data-tab="overpaid">Overpaid</button>
       <button class="tab" data-tab="lookup">Player lookup</button>
+      <button class="tab" data-tab="draft">Draft</button>
       <button class="tab" data-tab="analytics">Analytics</button>
       <button class="tab" data-tab="diagnostic">Diagnostic</button>
     </nav>
@@ -90,6 +91,55 @@
         </div>
         <div id="lookup-suggestions" class="suggestions"></div>
         <div id="lookup-card" class="player-card"></div>
+      </section>
+
+      <section class="tab-panel" id="panel-draft">
+        <h2>Draft surplus value</h2>
+        <p class="caption">
+          Drafts 2021&ndash;2025, skill positions only. <strong>Realized</strong> is each player's current-season production above the per-position model's expectation
+          (the same <code>production_residual</code> the bargains tab uses). <strong>Expected</strong> is a robust log-linear fit of realized residual vs draft slot
+          across the cohort. <strong>Surplus</strong> = realized minus expected: positive means the pick outperformed the typical outcome at that slot,
+          negative means it under-performed. Players not in the current rankings (cut, retired, injured, never qualified) keep NaN surplus rather than being imputed to zero.
+        </p>
+        <div class="draft-filters">
+          <label class="chip">
+            <input type="checkbox" id="draft-only-contributors" />
+            Only picks in current rankings
+          </label>
+          <div class="filter">
+            <label for="draft-season">Season</label>
+            <select id="draft-season">
+              <option value="all" selected>All 2021&ndash;2025</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+            </select>
+          </div>
+        </div>
+        <div class="draft-summary-row">
+          <div class="chart-card">
+            <h3>Total surplus by team</h3>
+            <canvas id="chart-team-surplus"></canvas>
+          </div>
+          <div class="chart-card">
+            <h3>Median surplus by round</h3>
+            <canvas id="chart-round-surplus"></canvas>
+          </div>
+        </div>
+        <div class="movers-row">
+          <div class="movers-col">
+            <h4>Top steals</h4>
+            <div id="draft-steals"></div>
+          </div>
+          <div class="movers-col">
+            <h4>Biggest reaches</h4>
+            <div id="draft-reaches"></div>
+          </div>
+        </div>
+        <h3>All picks</h3>
+        <div id="draft-table"></div>
       </section>
 
       <section class="tab-panel" id="panel-analytics">
