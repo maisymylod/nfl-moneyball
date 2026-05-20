@@ -353,106 +353,84 @@
     };
   }
 
-  // ---------- draft ----------
-  const DRAFT_FILTERS = { onlyContributors: false, season: "all" };
+  // ---------- fantasy draft ----------
+  const FANTASY_FILTERS = { onlyPlayed: false, season: "all", position: "all" };
+  let fantasySeasonsPopulated = false;
 
-  function draftPicks() {
-    const all = STATE.data.draft?.picks ?? [];
+  function fantasyRows() {
+    const all = STATE.data.fantasy?.players ?? [];
     return all.filter((p) => {
-      if (DRAFT_FILTERS.onlyContributors && !p.in_rankings) return false;
-      if (DRAFT_FILTERS.season !== "all" && String(p.season) !== DRAFT_FILTERS.season) return false;
+      if (FANTASY_FILTERS.onlyPlayed && !p.has_stats) return false;
+      if (FANTASY_FILTERS.season !== "all" && String(p.season) !== FANTASY_FILTERS.season) return false;
+      if (FANTASY_FILTERS.position !== "all" && p.position !== FANTASY_FILTERS.position) return false;
       return true;
     });
   }
 
-  function renderDraft() {
-    const picks = draftPicks();
-    drawTeamSurplusChart();
-    drawRoundSurplusChart();
+  function populateFantasySeasons() {
+    if (fantasySeasonsPopulated) return;
+    const seasons = [...new Set((STATE.data.fantasy?.players ?? []).map((p) => p.season))]
+      .filter((s) => s != null)
+      .sort((a, b) => b - a);
+    const sel = document.getElementById("fantasy-season");
+    for (const s of seasons) {
+      const opt = document.createElement("option");
+      opt.value = String(s);
+      opt.textContent = String(Math.round(s));
+      sel.appendChild(opt);
+    }
+    fantasySeasonsPopulated = true;
+  }
 
-    const scored = picks.filter((p) => p.surplus != null);
+  function renderFantasy() {
+    populateFantasySeasons();
+    drawFantasyRoundChart();
+    drawFantasyPositionChart();
+
+    const rows = fantasyRows();
+    const scored = rows.filter((p) => p.surplus != null);
     const steals = sortRows(scored, "surplus", "desc").slice(0, 15);
-    const reaches = sortRows(scored, "surplus", "asc").slice(0, 15);
+    const busts = sortRows(scored, "surplus", "asc").slice(0, 15);
 
     const moverCols = [
       { key: "season", label: "Yr", numeric: true, render: (v) => (v == null ? "-" : String(Math.round(v))) },
-      { key: "pick", label: "Pick", numeric: true, render: (v) => fmtInt(v) },
-      { key: "team", label: "Team" },
+      { key: "adp", label: "ADP", numeric: true, render: (v) => fmtNum(v, 1) },
       { key: "player_name", label: "Player" },
       { key: "position", label: "Pos" },
-      { key: "realized_residual", label: "Realized", numeric: true, render: (v) => fmtNum(v, 1) },
-      { key: "expected_residual", label: "Expected", numeric: true, render: (v) => fmtNum(v, 1) },
+      { key: "team", label: "Team" },
+      { key: "realized_points", label: "Realized", numeric: true, render: (v) => fmtNum(v, 1) },
+      { key: "expected_points", label: "Expected", numeric: true, render: (v) => fmtNum(v, 1) },
       { key: "surplus", label: "Surplus", numeric: true, render: (v) => fmtNum(v, 1) },
     ];
-    buildTable(document.getElementById("draft-steals"), steals, moverCols);
-    buildTable(document.getElementById("draft-reaches"), reaches, moverCols);
+    buildTable(document.getElementById("fantasy-steals"), steals, moverCols);
+    buildTable(document.getElementById("fantasy-busts"), busts, moverCols);
 
     const fullCols = [
       { key: "season", label: "Yr", numeric: true, render: (v) => (v == null ? "-" : String(Math.round(v))) },
-      { key: "round", label: "Rd", numeric: true, render: (v) => fmtInt(v) },
-      { key: "pick", label: "Pick", numeric: true, render: (v) => fmtInt(v) },
-      { key: "team", label: "Team" },
+      { key: "adp", label: "ADP", numeric: true, render: (v) => fmtNum(v, 1) },
+      { key: "adp_round", label: "Rd", numeric: true, render: (v) => fmtInt(v) },
       { key: "player_name", label: "Player" },
       { key: "position", label: "Pos" },
-      { key: "college", label: "College" },
-      { key: "current_snaps", label: "Snaps", numeric: true, render: (v) => fmtInt(v) },
-      { key: "realized_residual", label: "Realized", numeric: true, render: (v) => fmtNum(v, 1) },
-      { key: "expected_residual", label: "Expected", numeric: true, render: (v) => fmtNum(v, 1) },
+      { key: "team", label: "Team" },
+      { key: "times_drafted", label: "Drafts", numeric: true, render: (v) => fmtInt(v) },
+      { key: "realized_points", label: "Realized", numeric: true, render: (v) => fmtNum(v, 1) },
+      { key: "expected_points", label: "Expected", numeric: true, render: (v) => fmtNum(v, 1) },
       { key: "surplus", label: "Surplus", numeric: true, render: (v) => fmtNum(v, 1) },
     ];
-    const sorted = sortRows(picks, "surplus", "desc");
-    buildTable(document.getElementById("draft-table"), sorted, fullCols);
+    const sorted = sortRows(rows, "surplus", "desc");
+    buildTable(document.getElementById("fantasy-table"), sorted, fullCols);
   }
 
-  function drawTeamSurplusChart() {
-    const canvas = document.getElementById("chart-team-surplus");
+  function drawFantasyRoundChart() {
+    const canvas = document.getElementById("chart-fantasy-round");
     if (!canvas || typeof Chart === "undefined") return;
-    destroyChart("team-surplus");
+    destroyChart("fantasy-round");
 
-    const picks = draftPicks();
-    // Recompute team surplus from filtered picks so the chart respects the filters.
-    const byTeam = {};
-    for (const p of picks) {
-      if (p.surplus == null) continue;
-      byTeam[p.team] = (byTeam[p.team] ?? 0) + p.surplus;
-    }
-    const rows = Object.entries(byTeam)
-      .map(([team, total]) => ({ team, total }))
-      .sort((a, b) => b.total - a.total);
-
-    STATE.charts["team-surplus"] = new Chart(canvas, {
-      type: "bar",
-      data: {
-        labels: rows.map((r) => r.team),
-        datasets: [{
-          label: "Total surplus",
-          data: rows.map((r) => r.total),
-          backgroundColor: rows.map((r) => (r.total >= 0 ? "#0a7f3f" : "#b03030")),
-        }],
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        indexAxis: "y",
-        plugins: { legend: { display: false } },
-        scales: {
-          x: { ticks: { font: { size: 10 } } },
-          y: { ticks: { font: { size: 10 } } },
-        },
-      },
-    });
-  }
-
-  function drawRoundSurplusChart() {
-    const canvas = document.getElementById("chart-round-surplus");
-    if (!canvas || typeof Chart === "undefined") return;
-    destroyChart("round-surplus");
-
-    const picks = draftPicks();
+    const rows = fantasyRows();
     const byRound = {};
-    for (const p of picks) {
+    for (const p of rows) {
       if (p.surplus == null) continue;
-      (byRound[p.round] ??= []).push(p.surplus);
+      (byRound[p.adp_round] ??= []).push(p.surplus);
     }
     const rounds = Object.keys(byRound).map(Number).sort((a, b) => a - b);
     const medians = rounds.map((r) => {
@@ -461,7 +439,7 @@
       return arr.length % 2 ? arr[mid] : (arr[mid - 1] + arr[mid]) / 2;
     });
 
-    STATE.charts["round-surplus"] = new Chart(canvas, {
+    STATE.charts["fantasy-round"] = new Chart(canvas, {
       type: "bar",
       data: {
         labels: rounds.map((r) => `R${r}`),
@@ -483,14 +461,58 @@
     });
   }
 
-  function setupDraftFilters() {
-    document.getElementById("draft-only-contributors").addEventListener("change", (e) => {
-      DRAFT_FILTERS.onlyContributors = e.target.checked;
-      renderDraft();
+  function drawFantasyPositionChart() {
+    const canvas = document.getElementById("chart-fantasy-position");
+    if (!canvas || typeof Chart === "undefined") return;
+    destroyChart("fantasy-position");
+
+    const rows = fantasyRows();
+    const byPos = {};
+    for (const p of rows) {
+      if (p.surplus == null) continue;
+      (byPos[p.position] ??= []).push(p.surplus);
+    }
+    const positions = ["QB", "RB", "WR", "TE"].filter((p) => byPos[p]?.length);
+    const medians = positions.map((pos) => {
+      const arr = byPos[pos].slice().sort((a, b) => a - b);
+      const mid = Math.floor(arr.length / 2);
+      return arr.length % 2 ? arr[mid] : (arr[mid - 1] + arr[mid]) / 2;
     });
-    document.getElementById("draft-season").addEventListener("change", (e) => {
-      DRAFT_FILTERS.season = e.target.value;
-      renderDraft();
+
+    STATE.charts["fantasy-position"] = new Chart(canvas, {
+      type: "bar",
+      data: {
+        labels: positions,
+        datasets: [{
+          label: "Median surplus",
+          data: medians,
+          backgroundColor: medians.map((v) => (v >= 0 ? "#0a7f3f" : "#b03030")),
+        }],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { grid: { display: false } },
+          y: { ticks: { font: { size: 10 } } },
+        },
+      },
+    });
+  }
+
+  function setupFantasyFilters() {
+    document.getElementById("fantasy-only-played").addEventListener("change", (e) => {
+      FANTASY_FILTERS.onlyPlayed = e.target.checked;
+      renderFantasy();
+    });
+    document.getElementById("fantasy-season").addEventListener("change", (e) => {
+      FANTASY_FILTERS.season = e.target.value;
+      renderFantasy();
+    });
+    document.getElementById("fantasy-position").addEventListener("change", (e) => {
+      FANTASY_FILTERS.position = e.target.value;
+      renderFantasy();
     });
   }
 
@@ -557,7 +579,7 @@
         document.getElementById(`panel-${t.dataset.tab}`).classList.add("active");
         if (t.dataset.tab === "analytics") renderAnalytics();
         if (t.dataset.tab === "diagnostic") renderDiagnostic();
-        if (t.dataset.tab === "draft") renderDraft();
+        if (t.dataset.tab === "fantasy") renderFantasy();
       });
     });
   }
@@ -580,7 +602,7 @@
     setupFilters();
     setupTabs();
     setupLookup();
-    setupDraftFilters();
+    setupFantasyFilters();
     rerenderAll();
   }
 
