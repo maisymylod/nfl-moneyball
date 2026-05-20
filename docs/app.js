@@ -353,6 +353,147 @@
     };
   }
 
+  // ---------- draft ----------
+  const DRAFT_FILTERS = { onlyContributors: false, season: "all" };
+
+  function draftPicks() {
+    const all = STATE.data.draft?.picks ?? [];
+    return all.filter((p) => {
+      if (DRAFT_FILTERS.onlyContributors && !p.in_rankings) return false;
+      if (DRAFT_FILTERS.season !== "all" && String(p.season) !== DRAFT_FILTERS.season) return false;
+      return true;
+    });
+  }
+
+  function renderDraft() {
+    const picks = draftPicks();
+    drawTeamSurplusChart();
+    drawRoundSurplusChart();
+
+    const scored = picks.filter((p) => p.surplus != null);
+    const steals = sortRows(scored, "surplus", "desc").slice(0, 15);
+    const reaches = sortRows(scored, "surplus", "asc").slice(0, 15);
+
+    const moverCols = [
+      { key: "season", label: "Yr", numeric: true, render: (v) => (v == null ? "-" : String(Math.round(v))) },
+      { key: "pick", label: "Pick", numeric: true, render: (v) => fmtInt(v) },
+      { key: "team", label: "Team" },
+      { key: "player_name", label: "Player" },
+      { key: "position", label: "Pos" },
+      { key: "realized_residual", label: "Realized", numeric: true, render: (v) => fmtNum(v, 1) },
+      { key: "expected_residual", label: "Expected", numeric: true, render: (v) => fmtNum(v, 1) },
+      { key: "surplus", label: "Surplus", numeric: true, render: (v) => fmtNum(v, 1) },
+    ];
+    buildTable(document.getElementById("draft-steals"), steals, moverCols);
+    buildTable(document.getElementById("draft-reaches"), reaches, moverCols);
+
+    const fullCols = [
+      { key: "season", label: "Yr", numeric: true, render: (v) => (v == null ? "-" : String(Math.round(v))) },
+      { key: "round", label: "Rd", numeric: true, render: (v) => fmtInt(v) },
+      { key: "pick", label: "Pick", numeric: true, render: (v) => fmtInt(v) },
+      { key: "team", label: "Team" },
+      { key: "player_name", label: "Player" },
+      { key: "position", label: "Pos" },
+      { key: "college", label: "College" },
+      { key: "current_snaps", label: "Snaps", numeric: true, render: (v) => fmtInt(v) },
+      { key: "realized_residual", label: "Realized", numeric: true, render: (v) => fmtNum(v, 1) },
+      { key: "expected_residual", label: "Expected", numeric: true, render: (v) => fmtNum(v, 1) },
+      { key: "surplus", label: "Surplus", numeric: true, render: (v) => fmtNum(v, 1) },
+    ];
+    const sorted = sortRows(picks, "surplus", "desc");
+    buildTable(document.getElementById("draft-table"), sorted, fullCols);
+  }
+
+  function drawTeamSurplusChart() {
+    const canvas = document.getElementById("chart-team-surplus");
+    if (!canvas || typeof Chart === "undefined") return;
+    destroyChart("team-surplus");
+
+    const picks = draftPicks();
+    // Recompute team surplus from filtered picks so the chart respects the filters.
+    const byTeam = {};
+    for (const p of picks) {
+      if (p.surplus == null) continue;
+      byTeam[p.team] = (byTeam[p.team] ?? 0) + p.surplus;
+    }
+    const rows = Object.entries(byTeam)
+      .map(([team, total]) => ({ team, total }))
+      .sort((a, b) => b.total - a.total);
+
+    STATE.charts["team-surplus"] = new Chart(canvas, {
+      type: "bar",
+      data: {
+        labels: rows.map((r) => r.team),
+        datasets: [{
+          label: "Total surplus",
+          data: rows.map((r) => r.total),
+          backgroundColor: rows.map((r) => (r.total >= 0 ? "#0a7f3f" : "#b03030")),
+        }],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        indexAxis: "y",
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { ticks: { font: { size: 10 } } },
+          y: { ticks: { font: { size: 10 } } },
+        },
+      },
+    });
+  }
+
+  function drawRoundSurplusChart() {
+    const canvas = document.getElementById("chart-round-surplus");
+    if (!canvas || typeof Chart === "undefined") return;
+    destroyChart("round-surplus");
+
+    const picks = draftPicks();
+    const byRound = {};
+    for (const p of picks) {
+      if (p.surplus == null) continue;
+      (byRound[p.round] ??= []).push(p.surplus);
+    }
+    const rounds = Object.keys(byRound).map(Number).sort((a, b) => a - b);
+    const medians = rounds.map((r) => {
+      const arr = byRound[r].slice().sort((a, b) => a - b);
+      const mid = Math.floor(arr.length / 2);
+      return arr.length % 2 ? arr[mid] : (arr[mid - 1] + arr[mid]) / 2;
+    });
+
+    STATE.charts["round-surplus"] = new Chart(canvas, {
+      type: "bar",
+      data: {
+        labels: rounds.map((r) => `R${r}`),
+        datasets: [{
+          label: "Median surplus",
+          data: medians,
+          backgroundColor: medians.map((v) => (v >= 0 ? "#0a7f3f" : "#b03030")),
+        }],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { grid: { display: false } },
+          y: { ticks: { font: { size: 10 } } },
+        },
+      },
+    });
+  }
+
+  function setupDraftFilters() {
+    document.getElementById("draft-only-contributors").addEventListener("change", (e) => {
+      DRAFT_FILTERS.onlyContributors = e.target.checked;
+      renderDraft();
+    });
+    document.getElementById("draft-season").addEventListener("change", (e) => {
+      DRAFT_FILTERS.season = e.target.value;
+      renderDraft();
+    });
+  }
+
   // ---------- diagnostic ----------
   function renderDiagnostic() {
     const breakdown = STATE.data.match_quality_breakdown ?? [];
@@ -416,6 +557,7 @@
         document.getElementById(`panel-${t.dataset.tab}`).classList.add("active");
         if (t.dataset.tab === "analytics") renderAnalytics();
         if (t.dataset.tab === "diagnostic") renderDiagnostic();
+        if (t.dataset.tab === "draft") renderDraft();
       });
     });
   }
@@ -438,6 +580,7 @@
     setupFilters();
     setupTabs();
     setupLookup();
+    setupDraftFilters();
     rerenderAll();
   }
 

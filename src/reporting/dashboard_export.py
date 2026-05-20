@@ -124,6 +124,22 @@ def _load_breakdown() -> list[dict]:
     return _records(pd.read_csv(path))
 
 
+def _load_draft() -> dict:
+    picks_path = PROC / "draft_value.parquet"
+    team_path = PROC / "draft_team_summary.parquet"
+    round_path = PROC / "draft_round_summary.parquet"
+    if not picks_path.exists():
+        return {"picks": [], "team_summary": [], "round_summary": []}
+    picks = pd.read_parquet(picks_path)
+    team = pd.read_parquet(team_path) if team_path.exists() else pd.DataFrame()
+    rnd = pd.read_parquet(round_path) if round_path.exists() else pd.DataFrame()
+    return {
+        "picks": _records(picks),
+        "team_summary": _records(team),
+        "round_summary": _records(rnd),
+    }
+
+
 def _load_model_metrics() -> tuple[dict, str | None]:
     latest = MODELS / "latest.pkl"
     if not latest.exists():
@@ -161,6 +177,7 @@ def export() -> None:
         "top_movers": _load_movers(),
         "excluded_players": _load_excluded(),
         "match_quality_breakdown": _load_breakdown(),
+        "draft": _load_draft(),
     }
 
     out = DOCS / "data.json"
