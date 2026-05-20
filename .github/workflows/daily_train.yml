@@ -31,8 +31,8 @@ jobs:
       - name: Fetch contracts
         run: python -m src.pipeline.fetch_contracts
 
-      - name: Fetch draft picks
-        run: python -m src.pipeline.fetch_draft
+      - name: Fetch fantasy ADP
+        run: python -m src.pipeline.fetch_adp
 
       - name: Merge
         run: python -m src.pipeline.merge
@@ -43,8 +43,8 @@ jobs:
       - name: Score
         run: python -m src.model.score
 
-      - name: Draft surplus value
-        run: python -m src.model.draft_value
+      - name: Fantasy draft value
+        run: python -m src.model.fantasy_value
 
       - name: Diagnostic
         run: python -m src.reporting.diagnostic

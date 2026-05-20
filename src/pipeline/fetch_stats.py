@@ -27,7 +27,7 @@ def latest_completed_season() -> int:
     return today.year - 2
 
 
-def seasons_to_pull(n: int = 4) -> list[int]:
+def seasons_to_pull(n: int = 5) -> list[int]:
     end = latest_completed_season()
     return list(range(end - n + 1, end + 1))
 

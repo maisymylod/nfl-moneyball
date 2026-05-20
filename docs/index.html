@@ -66,7 +66,7 @@
       <button class="tab active" data-tab="bargains">Bargains</button>
       <button class="tab" data-tab="overpaid">Overpaid</button>
       <button class="tab" data-tab="lookup">Player lookup</button>
-      <button class="tab" data-tab="draft">Draft</button>
+      <button class="tab" data-tab="fantasy">Fantasy draft</button>
       <button class="tab" data-tab="analytics">Analytics</button>
       <button class="tab" data-tab="diagnostic">Diagnostic</button>
     </nav>
@@ -93,53 +93,58 @@
         <div id="lookup-card" class="player-card"></div>
       </section>
 
-      <section class="tab-panel" id="panel-draft">
-        <h2>Draft surplus value</h2>
+      <section class="tab-panel" id="panel-fantasy">
+        <h2>Fantasy draft value</h2>
         <p class="caption">
-          Drafts 2021&ndash;2025, skill positions only. <strong>Realized</strong> is each player's current-season production above the per-position model's expectation
-          (the same <code>production_residual</code> the bargains tab uses). <strong>Expected</strong> is a robust log-linear fit of realized residual vs draft slot
-          across the cohort. <strong>Surplus</strong> = realized minus expected: positive means the pick outperformed the typical outcome at that slot,
-          negative means it under-performed. Players not in the current rankings (cut, retired, injured, never qualified) keep NaN surplus rather than being imputed to zero.
+          Half-PPR redraft, 12-team leagues. ADP from <a href="https://fantasyfootballcalculator.com/adp/half-ppr" target="_blank" rel="noopener">Fantasy Football Calculator</a>.
+          <strong>Realized</strong> is each player's half-PPR fantasy points in the season the ADP was drawn for. <strong>Expected</strong> is a robust log-linear fit of realized
+          points vs ADP across the cohort. <strong>Surplus</strong> = realized minus expected: positive means the pick out-earned its ADP, negative means it under-earned.
+          Players with no recorded stats (missed the year, never played) keep NaN surplus rather than being imputed to zero.
         </p>
-        <div class="draft-filters">
+        <div class="fantasy-filters">
           <label class="chip">
-            <input type="checkbox" id="draft-only-contributors" />
-            Only picks in current rankings
+            <input type="checkbox" id="fantasy-only-played" />
+            Only players with recorded stats
           </label>
           <div class="filter">
-            <label for="draft-season">Season</label>
-            <select id="draft-season">
-              <option value="all" selected>All 2021&ndash;2025</option>
-              <option value="2021">2021</option>
-              <option value="2022">2022</option>
-              <option value="2023">2023</option>
-              <option value="2024">2024</option>
-              <option value="2025">2025</option>
+            <label for="fantasy-season">Season</label>
+            <select id="fantasy-season">
+              <option value="all" selected>All seasons</option>
+            </select>
+          </div>
+          <div class="filter">
+            <label for="fantasy-position">Position</label>
+            <select id="fantasy-position">
+              <option value="all" selected>All</option>
+              <option value="QB">QB</option>
+              <option value="RB">RB</option>
+              <option value="WR">WR</option>
+              <option value="TE">TE</option>
             </select>
           </div>
         </div>
-        <div class="draft-summary-row">
+        <div class="fantasy-summary-row">
           <div class="chart-card">
-            <h3>Total surplus by team</h3>
-            <canvas id="chart-team-surplus"></canvas>
+            <h3>Median surplus by ADP round (12-team)</h3>
+            <canvas id="chart-fantasy-round"></canvas>
           </div>
           <div class="chart-card">
-            <h3>Median surplus by round</h3>
-            <canvas id="chart-round-surplus"></canvas>
+            <h3>Median surplus by position</h3>
+            <canvas id="chart-fantasy-position"></canvas>
           </div>
         </div>
         <div class="movers-row">
           <div class="movers-col">
             <h4>Top steals</h4>
-            <div id="draft-steals"></div>
+            <div id="fantasy-steals"></div>
           </div>
           <div class="movers-col">
-            <h4>Biggest reaches</h4>
-            <div id="draft-reaches"></div>
+            <h4>Biggest busts</h4>
+            <div id="fantasy-busts"></div>
           </div>
         </div>
-        <h3>All picks</h3>
-        <div id="draft-table"></div>
+        <h3>All draft-eligible players</h3>
+        <div id="fantasy-table"></div>
       </section>
 
       <section class="tab-panel" id="panel-analytics">
