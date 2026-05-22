@@ -174,7 +174,6 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0034646,Brandon Powell,WR,MIN,217.0,no_match,66.5,no_contract_match
 2024,00-0034419,Braxton Berrios,WR,MIA,112.0,no_match,63.333333333333336,no_contract_match
 2024,00-0036414,Cam Akers,RB,MIN,294.0,no_match,60.86956521739131,no_contract_match
-2024,00-0034418,Cedrick Wilson Jr.,WR,NO,384.0,no_match,71.42857142857143,no_contract_match
 2024,00-0032128,Chris Conley,WR,SF,239.0,no_match,78.26086956521739,no_contract_match
 2024,00-0033662,Cooper Rush,QB,DAL,572.0,no_match,43.47826086956522,no_contract_match
 2024,00-0030578,Cordarrelle Patterson,RB,PIT,110.0,no_match,72.22222222222221,no_contract_match
@@ -197,7 +196,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0032141,Geoff Swaim,TE,CLE,140.0,no_match,52.63157894736843,no_contract_match
 2024,00-0033895,Gerald Everett,TE,CHI,246.0,no_match,51.42857142857142,no_contract_match
 2024,00-0034184,Gus Edwards,RB,LAC,231.0,no_match,73.88888888888889,no_contract_match
-2024,00-0037617,Hassan Haskins,RB,LAC,147.0,no_match,59.25925925925925,no_contract_match
+2024,00-0037617,Hassan Haskins,RB,LAC,147.0,no_match,53.84615384615385,no_contract_match
 2024,00-0034830,Hayden Hurst,TE,LAC,174.0,no_match,66.66666666666667,no_contract_match
 2024,00-0035806,JaMycal Hasty,RB,NE,107.0,no_match,72.0,no_contract_match
 2024,00-0036387,Jalen Reagor,WR,LAC,138.0,no_match,75.0,no_contract_match
