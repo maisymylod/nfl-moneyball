@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-25T12:10:20.017774+00:00",
-  "model_trained_at": "2026-05-25",
+  "generated_at": "2026-05-27T12:06:05.445331+00:00",
+  "model_trained_at": "2026-05-27",
   "current_season": 2024,
   "row_counts": {
     "total_current": 569,
-    "eligible_for_ranking": 316,
+    "eligible_for_ranking": 323,
     "low_sample": 159,
     "no_match": 147
   },
@@ -350,6 +350,20 @@
       "contract_match_quality": "exact"
     },
     {
+      "player_name": "Ameer Abdullah",
+      "position": "RB",
+      "team": "LV",
+      "age": 31.0,
+      "offense_snaps": 410.0,
+      "production": 4.271,
+      "expected_production": -3.887,
+      "production_residual": 8.158,
+      "apy_millions": 1.3,
+      "value_score": 6.276,
+      "confidence": "Medium",
+      "contract_match_quality": "exact"
+    },
+    {
       "player_name": "Demario Douglas",
       "position": "WR",
       "team": "NE",
@@ -361,20 +375,6 @@
       "apy_millions": 0.993,
       "value_score": 6.19,
       "confidence": "High",
-      "contract_match_quality": "exact"
-    },
-    {
-      "player_name": "Tylan Wallace",
-      "position": "WR",
-      "team": "BAL",
-      "age": 25.0,
-      "offense_snaps": 343.0,
-      "production": 12.686,
-      "expected_production": 4.112,
-      "production_residual": 8.574,
-      "apy_millions": 1.402,
-      "value_score": 6.113,
-      "confidence": "Medium",
       "contract_match_quality": "exact"
     }
   ],

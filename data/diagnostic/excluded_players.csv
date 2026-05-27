@@ -86,7 +86,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0034115,Jeff Wilson,RB,MIA,71.0,no_match,67.05882352941177,low_sample
 2024,00-0039614,Jermaine Jackson,WR,NO,4.0,no_match,73.33333333333334,low_sample
 2024,00-0036670,Jermar Jefferson,RB,DET,12.0,no_match,58.06451612903225,low_sample
-2024,00-0039392,Jha'Quan Jackson,WR,TEN,46.0,fuzzy_low,89.65517241379311,low_sample
+2024,00-0039392,Jha'Quan Jackson,WR,TEN,46.0,exact,100.0,low_sample
 2024,00-0031345,Jimmy Garoppolo,QB,LA,66.0,no_match,46.15384615384615,low_sample
 2024,00-0039398,Joe Milton III,QB,NE,61.0,exact,100.0,low_sample
 2024,00-0037306,John FitzPatrick,TE,GB,74.0,fuzzy_low,85.5,low_sample

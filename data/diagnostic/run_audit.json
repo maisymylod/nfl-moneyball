@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-25T12:10:18.718939+00:00",
+  "generated_at": "2026-05-27T12:06:04.129242+00:00",
   "current_season": 2024,
   "row_counts": {
     "players_all_seasons": 2328,
     "players_current_season": 569,
-    "matched_exact_or_fuzzy_high": 406,
+    "matched_exact_or_fuzzy_high": 407,
     "no_match": 147,
     "low_sample": 159
   },
