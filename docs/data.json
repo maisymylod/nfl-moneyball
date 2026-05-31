@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-30T11:31:15.146427+00:00",
+  "generated_at": "2026-05-31T11:33:32.393559+00:00",
   "current_season": 2024,
-  "model_trained_at": "2026-05-30",
+  "model_trained_at": "2026-05-31",
   "model_metrics": {
     "QB": {
       "n_train": 199,
@@ -11867,6 +11867,33 @@
       "te_r2": 0.871,
       "te_n_train": 275.0,
       "model_trained_at": "2026-05-30"
+    },
+    {
+      "run_at": "2026-05-31T11:33:30.664180+00:00",
+      "run_date": "2026-05-31",
+      "current_season": 2024.0,
+      "n_current": 569.0,
+      "n_eligible": 323.0,
+      "n_low_sample": 159.0,
+      "n_no_match": 146.0,
+      "n_with_contract": 423.0,
+      "qb_n_current": 78.0,
+      "qb_n_eligible": 45.0,
+      "rb_n_current": 145.0,
+      "rb_n_eligible": 68.0,
+      "wr_n_current": 227.0,
+      "wr_n_eligible": 130.0,
+      "te_n_current": 119.0,
+      "te_n_eligible": 80.0,
+      "qb_r2": 0.935,
+      "qb_n_train": 199.0,
+      "rb_r2": 0.727,
+      "rb_n_train": 326.0,
+      "wr_r2": 0.787,
+      "wr_n_train": 504.0,
+      "te_r2": 0.871,
+      "te_n_train": 275.0,
+      "model_trained_at": "2026-05-31"
     }
   ],
   "top_movers": [
@@ -14517,6 +14544,15 @@
       "confidence": "Low"
     },
     {
+      "player_name": "Jermar Jefferson",
+      "position": "RB",
+      "team": "DET",
+      "value_score_prev": -0.571,
+      "value_score": -0.571,
+      "value_score_delta": 0.0,
+      "confidence": "Low"
+    },
+    {
       "player_name": "DJ Moore",
       "position": "WR",
       "team": "CHI",
@@ -15415,6 +15451,15 @@
       "value_score": -5.171,
       "value_score_delta": 0.0,
       "confidence": "Medium"
+    },
+    {
+      "player_name": "Jordan Mims",
+      "position": "RB",
+      "team": "NO",
+      "value_score_prev": -5.329,
+      "value_score": -5.329,
+      "value_score_delta": 0.0,
+      "confidence": "Low"
     },
     {
       "player_name": "K.J. Osborn",
