@@ -2,9 +2,9 @@ position,contract_match_quality,count
 QB,exact,64
 QB,fuzzy_low,1
 QB,no_match,13
-RB,exact,92
+RB,exact,91
 RB,fuzzy_low,5
-RB,no_match,48
+RB,no_match,49
 TE,exact,91
 TE,fuzzy_low,3
 TE,no_match,25

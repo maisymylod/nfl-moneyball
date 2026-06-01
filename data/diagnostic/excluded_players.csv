@@ -134,7 +134,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0037557,Ronnie Rivers,RB,LA,88.0,exact,100.0,low_sample
 2024,00-0037077,Sam Howell,QB,SEA,25.0,exact,100.0,low_sample
 2024,00-0038614,Scott Matlock,RB,LAC,,no_match,67.85714285714286,low_sample
-2024,00-0037509,Sincere McCormick,RB,LV,89.0,exact,100.0,low_sample
+2024,00-0037509,Sincere McCormick,RB,LV,89.0,no_match,52.94117647058824,low_sample
 2024,00-0039364,Sione Vaki,RB,DET,26.0,exact,100.0,low_sample
 2024,00-0037327,Skylar Thompson,QB,MIA,58.0,exact,100.0,low_sample
 2024,00-0038090,Skyy Moore,WR,KC,82.0,exact,100.0,low_sample
