@@ -8,6 +8,6 @@ RB,no_match,49
 TE,exact,91
 TE,fuzzy_low,3
 TE,no_match,25
-WR,exact,161
+WR,exact,163
 WR,fuzzy_low,6
-WR,no_match,60
+WR,no_match,58

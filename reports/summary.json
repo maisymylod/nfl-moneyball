@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-02T12:20:31.873545+00:00",
-  "model_trained_at": "2026-06-02",
+  "generated_at": "2026-06-03T12:34:18.340279+00:00",
+  "model_trained_at": "2026-06-03",
   "current_season": 2024,
   "row_counts": {
     "total_current": 569,
-    "eligible_for_ranking": 323,
+    "eligible_for_ranking": 325,
     "low_sample": 159,
-    "no_match": 147
+    "no_match": 145
   },
   "model_metrics": {
     "QB": {
@@ -618,6 +618,20 @@
       "contract_match_quality": "exact"
     },
     {
+      "player_name": "Odell Beckham Jr.",
+      "position": "WR",
+      "team": "MIA",
+      "age": 31.0,
+      "offense_snaps": 119.0,
+      "production": -11.28,
+      "expected_production": -2.07,
+      "production_residual": -9.21,
+      "apy_millions": 1.3,
+      "value_score": -7.085,
+      "confidence": "Low",
+      "contract_match_quality": "exact"
+    },
+    {
       "player_name": "Dyami Brown",
       "position": "WR",
       "team": "WAS",
@@ -712,20 +726,6 @@
       "production_residual": -6.94,
       "apy_millions": 1.213,
       "value_score": -5.722,
-      "confidence": "Medium",
-      "contract_match_quality": "exact"
-    },
-    {
-      "player_name": "K.J. Osborn",
-      "position": "WR",
-      "team": "WAS",
-      "age": 27.0,
-      "offense_snaps": 251.0,
-      "production": -7.307,
-      "expected_production": -0.501,
-      "production_residual": -6.806,
-      "apy_millions": 1.215,
-      "value_score": -5.602,
       "confidence": "Medium",
       "contract_match_quality": "exact"
     }
