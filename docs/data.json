@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-03T12:34:21.011034+00:00",
+  "generated_at": "2026-06-04T12:01:43.498776+00:00",
   "current_season": 2024,
-  "model_trained_at": "2026-06-03",
+  "model_trained_at": "2026-06-04",
   "model_metrics": {
     "QB": {
       "n_train": 199,
@@ -24,7 +24,7 @@
     "total_current": 569,
     "eligible_for_ranking": 325,
     "low_sample": 159,
-    "no_match": 145
+    "no_match": 144
   },
   "players": [
     {
@@ -5888,26 +5888,6 @@
       "confidence": "Low"
     },
     {
-      "player_id": "00-0036670",
-      "player_name": "Jermar Jefferson",
-      "position": "RB",
-      "team": "DET",
-      "age": 24.0,
-      "offense_snaps": 12.0,
-      "production": -0.297,
-      "expected_production": 0.277,
-      "production_residual": -0.574,
-      "apy": 1005000.0,
-      "apy_millions": 1.005,
-      "cap_hit": null,
-      "contract_source": "overthecap",
-      "contract_match_quality": "exact",
-      "contract_match_score": 100.0,
-      "low_sample": true,
-      "value_score": -0.571,
-      "confidence": "Low"
-    },
-    {
       "player_id": "00-0034827",
       "player_name": "DJ Moore",
       "position": "WR",
@@ -9317,15 +9297,15 @@
       "production": 1.285,
       "expected_production": 4.91,
       "production_residual": -3.626,
-      "apy": null,
-      "apy_millions": null,
+      "apy": 0.0,
+      "apy_millions": 0.0,
       "cap_hit": null,
-      "contract_source": null,
-      "contract_match_quality": "no_match",
-      "contract_match_score": 57.0,
+      "contract_source": "overthecap",
+      "contract_match_quality": "exact",
+      "contract_match_score": 100.0,
       "low_sample": false,
       "value_score": null,
-      "confidence": "Low"
+      "confidence": "High"
     },
     {
       "player_id": "00-0033858",
@@ -10437,12 +10417,12 @@
       "production": -9.617,
       "expected_production": -3.006,
       "production_residual": -6.612,
-      "apy": null,
-      "apy_millions": null,
+      "apy": 0.0,
+      "apy_millions": 0.0,
       "cap_hit": null,
-      "contract_source": null,
-      "contract_match_quality": "no_match",
-      "contract_match_score": 75.0,
+      "contract_source": "overthecap",
+      "contract_match_quality": "exact",
+      "contract_match_score": 100.0,
       "low_sample": false,
       "value_score": null,
       "confidence": "Low"
@@ -10583,6 +10563,26 @@
       "contract_source": null,
       "contract_match_quality": "no_match",
       "contract_match_score": 58.333,
+      "low_sample": true,
+      "value_score": null,
+      "confidence": "Low"
+    },
+    {
+      "player_id": "00-0036670",
+      "player_name": "Jermar Jefferson",
+      "position": "RB",
+      "team": "DET",
+      "age": 24.0,
+      "offense_snaps": 12.0,
+      "production": -0.297,
+      "expected_production": 0.277,
+      "production_residual": -0.574,
+      "apy": null,
+      "apy_millions": null,
+      "cap_hit": null,
+      "contract_source": null,
+      "contract_match_quality": "no_match",
+      "contract_match_score": 58.065,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -11975,6 +11975,33 @@
       "te_r2": 0.871,
       "te_n_train": 275.0,
       "model_trained_at": "2026-06-03"
+    },
+    {
+      "run_at": "2026-06-04T12:01:41.199546+00:00",
+      "run_date": "2026-06-04",
+      "current_season": 2024.0,
+      "n_current": 569.0,
+      "n_eligible": 325.0,
+      "n_low_sample": 159.0,
+      "n_no_match": 144.0,
+      "n_with_contract": 425.0,
+      "qb_n_current": 78.0,
+      "qb_n_eligible": 45.0,
+      "rb_n_current": 145.0,
+      "rb_n_eligible": 68.0,
+      "wr_n_current": 227.0,
+      "wr_n_eligible": 132.0,
+      "te_n_current": 119.0,
+      "te_n_eligible": 80.0,
+      "qb_r2": 0.935,
+      "qb_n_train": 199.0,
+      "rb_r2": 0.727,
+      "rb_n_train": 326.0,
+      "wr_r2": 0.787,
+      "wr_n_train": 504.0,
+      "te_r2": 0.871,
+      "te_n_train": 275.0,
+      "model_trained_at": "2026-06-04"
     }
   ],
   "top_movers": [
@@ -14616,15 +14643,6 @@
       "confidence": "Low"
     },
     {
-      "player_name": "Jermar Jefferson",
-      "position": "RB",
-      "team": "DET",
-      "value_score_prev": -0.571,
-      "value_score": -0.571,
-      "value_score_delta": 0.0,
-      "confidence": "Low"
-    },
-    {
       "player_name": "DJ Moore",
       "position": "WR",
       "team": "CHI",
@@ -15507,6 +15525,15 @@
       "confidence": "Medium"
     },
     {
+      "player_name": "Braxton Berrios",
+      "position": "WR",
+      "team": "MIA",
+      "value_score_prev": -4.979,
+      "value_score": -4.979,
+      "value_score_delta": 0.0,
+      "confidence": "Low"
+    },
+    {
       "player_name": "Bailey Zappe",
       "position": "QB",
       "team": "CLE",
@@ -15604,6 +15631,15 @@
       "value_score": -7.058,
       "value_score_delta": 0.0,
       "confidence": "High"
+    },
+    {
+      "player_name": "Odell Beckham Jr.",
+      "position": "WR",
+      "team": "MIA",
+      "value_score_prev": -7.085,
+      "value_score": -7.085,
+      "value_score_delta": 0.0,
+      "confidence": "Low"
     },
     {
       "player_name": "Caleb Williams",
@@ -16731,8 +16767,8 @@
       "position": "RB",
       "team": "DET",
       "offense_snaps": 12.0,
-      "contract_match_quality": "exact",
-      "contract_match_score": 100.0,
+      "contract_match_quality": "no_match",
+      "contract_match_score": 58.065,
       "exclusion_reason": "low_sample"
     },
     {
@@ -17969,17 +18005,6 @@
     },
     {
       "season": 2024.0,
-      "player_id": "00-0036387",
-      "player_name": "Jalen Reagor",
-      "position": "WR",
-      "team": "LAC",
-      "offense_snaps": 138.0,
-      "contract_match_quality": "no_match",
-      "contract_match_score": 75.0,
-      "exclusion_reason": "no_contract_match"
-    },
-    {
-      "season": 2024.0,
       "player_id": "00-0033948",
       "player_name": "Jamaal Williams",
       "position": "RB",
@@ -18053,17 +18078,6 @@
       "offense_snaps": 312.0,
       "contract_match_quality": "no_match",
       "contract_match_score": 60.87,
-      "exclusion_reason": "no_contract_match"
-    },
-    {
-      "season": 2024.0,
-      "player_id": "00-0033857",
-      "player_name": "JuJu Smith-Schuster",
-      "position": "WR",
-      "team": "KC",
-      "offense_snaps": 513.0,
-      "contract_match_quality": "no_match",
-      "contract_match_score": 57.0,
       "exclusion_reason": "no_contract_match"
     },
     {
@@ -18482,7 +18496,7 @@
     {
       "position": "RB",
       "contract_match_quality": "exact",
-      "count": 91.0
+      "count": 90.0
     },
     {
       "position": "RB",
@@ -18492,7 +18506,7 @@
     {
       "position": "RB",
       "contract_match_quality": "no_match",
-      "count": 49.0
+      "count": 50.0
     },
     {
       "position": "TE",
@@ -18512,7 +18526,7 @@
     {
       "position": "WR",
       "contract_match_quality": "exact",
-      "count": 163.0
+      "count": 165.0
     },
     {
       "position": "WR",
@@ -18522,7 +18536,7 @@
     {
       "position": "WR",
       "contract_match_quality": "no_match",
-      "count": 58.0
+      "count": 56.0
     }
   ],
   "fantasy": {

@@ -85,7 +85,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0039853,Javon Baker,WR,NE,90.0,no_match,63.63636363636363,low_sample
 2024,00-0034115,Jeff Wilson,RB,MIA,71.0,no_match,67.05882352941177,low_sample
 2024,00-0039614,Jermaine Jackson,WR,NO,4.0,no_match,73.33333333333334,low_sample
-2024,00-0036670,Jermar Jefferson,RB,DET,12.0,exact,100.0,low_sample
+2024,00-0036670,Jermar Jefferson,RB,DET,12.0,no_match,58.06451612903225,low_sample
 2024,00-0039392,Jha'Quan Jackson,WR,TEN,46.0,exact,100.0,low_sample
 2024,00-0031345,Jimmy Garoppolo,QB,LA,66.0,no_match,46.15384615384615,low_sample
 2024,00-0039398,Joe Milton III,QB,NE,61.0,exact,100.0,low_sample
@@ -198,7 +198,6 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0037617,Hassan Haskins,RB,LAC,147.0,no_match,53.84615384615385,no_contract_match
 2024,00-0034830,Hayden Hurst,TE,LAC,174.0,no_match,66.66666666666667,no_contract_match
 2024,00-0035806,JaMycal Hasty,RB,NE,107.0,no_match,72.0,no_contract_match
-2024,00-0036387,Jalen Reagor,WR,LAC,138.0,no_match,75.0,no_contract_match
 2024,00-0033948,Jamaal Williams,RB,NO,178.0,no_match,72.38095238095238,no_contract_match
 2024,00-0031941,Jamison Crowder,WR,WAS,182.0,no_match,68.96551724137932,no_contract_match
 2024,00-0039810,Jermaine Burton,WR,CIN,131.0,no_match,63.52941176470588,no_contract_match
@@ -206,7 +205,6 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0033858,Jonnu Smith,TE,MIA,626.0,no_match,63.0,no_contract_match
 2024,00-0034364,Jordan Akins,TE,CLE,456.0,no_match,68.39999999999999,no_contract_match
 2024,00-0033943,Josh Reynolds,WR,JAX,312.0,no_match,60.86956521739131,no_contract_match
-2024,00-0033857,JuJu Smith-Schuster,WR,KC,513.0,no_match,57.0,no_contract_match
 2024,00-0033923,Kareem Hunt,RB,KC,550.0,no_match,64.0,no_contract_match
 2024,00-0030279,Keenan Allen,WR,CHI,850.0,no_match,64.0,no_contract_match
 2024,00-0036510,Kenny Yeboah,TE,NYJ,106.0,no_match,61.53846153846154,no_contract_match

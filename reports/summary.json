@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-03T12:34:18.340279+00:00",
-  "model_trained_at": "2026-06-03",
+  "generated_at": "2026-06-04T12:01:40.681231+00:00",
+  "model_trained_at": "2026-06-04",
   "current_season": 2024,
   "row_counts": {
     "total_current": 569,
     "eligible_for_ranking": 325,
     "low_sample": 159,
-    "no_match": 145
+    "no_match": 144
   },
   "model_metrics": {
     "QB": {
