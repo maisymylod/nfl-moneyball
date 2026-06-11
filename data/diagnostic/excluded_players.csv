@@ -134,7 +134,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0037557,Ronnie Rivers,RB,LA,88.0,exact,100.0,low_sample
 2024,00-0037077,Sam Howell,QB,SEA,25.0,exact,100.0,low_sample
 2024,00-0038614,Scott Matlock,RB,LAC,,no_match,67.85714285714286,low_sample
-2024,00-0037509,Sincere McCormick,RB,LV,89.0,no_match,52.94117647058824,low_sample
+2024,00-0037509,Sincere McCormick,RB,LV,89.0,exact,100.0,low_sample
 2024,00-0039364,Sione Vaki,RB,DET,26.0,exact,100.0,low_sample
 2024,00-0037327,Skylar Thompson,QB,MIA,58.0,exact,100.0,low_sample
 2024,00-0038090,Skyy Moore,WR,KC,82.0,exact,100.0,low_sample
@@ -204,13 +204,14 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0033897,Joe Mixon,RB,HOU,645.0,no_match,70.0,no_contract_match
 2024,00-0033858,Jonnu Smith,TE,MIA,626.0,no_match,63.0,no_contract_match
 2024,00-0034364,Jordan Akins,TE,CLE,456.0,no_match,68.39999999999999,no_contract_match
+2024,00-0038678,Jordan Mims,RB,NO,105.0,no_match,78.26086956521739,no_contract_match
 2024,00-0033943,Josh Reynolds,WR,JAX,312.0,no_match,60.86956521739131,no_contract_match
 2024,00-0033923,Kareem Hunt,RB,KC,550.0,no_match,64.0,no_contract_match
 2024,00-0030279,Keenan Allen,WR,CHI,850.0,no_match,64.0,no_contract_match
 2024,00-0036510,Kenny Yeboah,TE,NYJ,106.0,no_match,61.53846153846154,no_contract_match
 2024,00-0034854,KhaDarel Hodge,WR,ATL,231.0,no_match,57.14285714285714,no_contract_match
 2024,00-0036906,Khalil Herbert,RB,CIN,139.0,no_match,53.2,no_contract_match
-2024,00-0038465,Malik Heath,WR,GB,190.0,no_match,63.63636363636363,no_contract_match
+2024,00-0038465,Malik Heath,WR,GB,190.0,no_match,69.56521739130434,no_contract_match
 2024,00-0024243,Marcedes Lewis,TE,CHI,220.0,no_match,56.00000000000001,no_contract_match
 2024,00-0035243,Miles Sanders,RB,CAR,224.0,no_match,66.66666666666667,no_contract_match
 2024,00-0031585,MyCole Pruitt,TE,PIT,282.0,no_match,69.56521739130434,no_contract_match
