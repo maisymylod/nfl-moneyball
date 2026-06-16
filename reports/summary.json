@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-15T13:04:32.759415+00:00",
-  "model_trained_at": "2026-06-15",
+  "generated_at": "2026-06-16T12:36:32.059267+00:00",
+  "model_trained_at": "2026-06-16",
   "current_season": 2024,
   "row_counts": {
     "total_current": 569,
@@ -66,20 +66,6 @@
       "production_residual": 21.936,
       "apy_millions": 1.087,
       "value_score": 20.174,
-      "confidence": "Medium",
-      "contract_match_quality": "exact"
-    },
-    {
-      "player_name": "Jalen Coker",
-      "position": "WR",
-      "team": "CAR",
-      "age": 22.0,
-      "offense_snaps": 430.0,
-      "production": 29.075,
-      "expected_production": 8.893,
-      "production_residual": 20.182,
-      "apy_millions": 1.075,
-      "value_score": 18.774,
       "confidence": "Medium",
       "contract_match_quality": "exact"
     },
@@ -375,6 +361,20 @@
       "apy_millions": 0.993,
       "value_score": 6.19,
       "confidence": "High",
+      "contract_match_quality": "exact"
+    },
+    {
+      "player_name": "Tylan Wallace",
+      "position": "WR",
+      "team": "BAL",
+      "age": 25.0,
+      "offense_snaps": 343.0,
+      "production": 12.686,
+      "expected_production": 4.112,
+      "production_residual": 8.574,
+      "apy_millions": 1.402,
+      "value_score": 6.113,
+      "confidence": "Medium",
       "contract_match_quality": "exact"
     }
   ],
@@ -1040,20 +1040,6 @@
           "contract_match_quality": "exact"
         },
         {
-          "player_name": "Jalen Coker",
-          "position": "WR",
-          "team": "CAR",
-          "age": 22.0,
-          "offense_snaps": 430.0,
-          "production": 29.075,
-          "expected_production": 8.893,
-          "production_residual": 20.182,
-          "apy_millions": 1.075,
-          "value_score": 18.774,
-          "confidence": "Medium",
-          "contract_match_quality": "exact"
-        },
-        {
           "player_name": "Ladd McConkey",
           "position": "WR",
           "team": "LAC",
@@ -1092,6 +1078,20 @@
           "production_residual": 33.124,
           "apy_millions": 3.665,
           "value_score": 9.038,
+          "confidence": "Medium",
+          "contract_match_quality": "exact"
+        },
+        {
+          "player_name": "Marvin Mims Jr.",
+          "position": "WR",
+          "team": "DEN",
+          "age": 22.0,
+          "offense_snaps": 326.0,
+          "production": 20.781,
+          "expected_production": 7.719,
+          "production_residual": 13.062,
+          "apy_millions": 1.517,
+          "value_score": 8.61,
           "confidence": "Medium",
           "contract_match_quality": "exact"
         }
