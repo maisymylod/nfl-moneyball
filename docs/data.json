@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-17T12:26:24.906863+00:00",
+  "generated_at": "2026-06-18T12:09:52.412784+00:00",
   "current_season": 2024,
-  "model_trained_at": "2026-06-17",
+  "model_trained_at": "2026-06-18",
   "model_metrics": {
     "QB": {
       "n_train": 199,
@@ -24,7 +24,7 @@
     "total_current": 569,
     "eligible_for_ranking": 327,
     "low_sample": 159,
-    "no_match": 142
+    "no_match": 141
   },
   "players": [
     {
@@ -3465,26 +3465,6 @@
       "contract_match_score": 100.0,
       "low_sample": true,
       "value_score": 0.589,
-      "confidence": "Low"
-    },
-    {
-      "player_id": "00-0039394",
-      "player_name": "Casey Washington",
-      "position": "WR",
-      "team": "ATL",
-      "age": 23.0,
-      "offense_snaps": 9.0,
-      "production": 0.951,
-      "expected_production": 0.337,
-      "production_residual": 0.614,
-      "apy": 1053399.0,
-      "apy_millions": 1.053,
-      "cap_hit": null,
-      "contract_source": "overthecap",
-      "contract_match_quality": "exact",
-      "contract_match_score": 100.0,
-      "low_sample": true,
-      "value_score": 0.583,
       "confidence": "Low"
     },
     {
@@ -10302,7 +10282,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 63.636,
+      "contract_match_score": 76.19,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -10362,7 +10342,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 55.172,
+      "contract_match_score": 56.296,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -10857,12 +10837,12 @@
       "production": 5.368,
       "expected_production": -0.625,
       "production_residual": 5.994,
-      "apy": null,
-      "apy_millions": null,
+      "apy": 0.0,
+      "apy_millions": 0.0,
       "cap_hit": null,
-      "contract_source": null,
-      "contract_match_quality": "no_match",
-      "contract_match_score": 66.667,
+      "contract_source": "overthecap",
+      "contract_match_quality": "exact",
+      "contract_match_score": 100.0,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -10997,12 +10977,12 @@
       "production": -2.419,
       "expected_production": -0.252,
       "production_residual": -2.167,
-      "apy": null,
-      "apy_millions": null,
+      "apy": 0.0,
+      "apy_millions": 0.0,
       "cap_hit": null,
-      "contract_source": null,
-      "contract_match_quality": "no_match",
-      "contract_match_score": 56.0,
+      "contract_source": "overthecap",
+      "contract_match_quality": "exact",
+      "contract_match_score": 100.0,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -11263,6 +11243,26 @@
       "contract_source": null,
       "contract_match_quality": "no_match",
       "contract_match_score": 62.069,
+      "low_sample": true,
+      "value_score": null,
+      "confidence": "Low"
+    },
+    {
+      "player_id": "00-0039394",
+      "player_name": "Casey Washington",
+      "position": "WR",
+      "team": "ATL",
+      "age": 23.0,
+      "offense_snaps": 9.0,
+      "production": 0.951,
+      "expected_production": 0.337,
+      "production_residual": 0.614,
+      "apy": null,
+      "apy_millions": null,
+      "cap_hit": null,
+      "contract_source": null,
+      "contract_match_quality": "no_match",
+      "contract_match_score": 78.788,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -12353,6 +12353,33 @@
       "te_r2": 0.871,
       "te_n_train": 275.0,
       "model_trained_at": "2026-06-17"
+    },
+    {
+      "run_at": "2026-06-18T12:09:50.098375+00:00",
+      "run_date": "2026-06-18",
+      "current_season": 2024.0,
+      "n_current": 569.0,
+      "n_eligible": 327.0,
+      "n_low_sample": 159.0,
+      "n_no_match": 141.0,
+      "n_with_contract": 428.0,
+      "qb_n_current": 78.0,
+      "qb_n_eligible": 45.0,
+      "rb_n_current": 145.0,
+      "rb_n_eligible": 67.0,
+      "wr_n_current": 227.0,
+      "wr_n_eligible": 134.0,
+      "te_n_current": 119.0,
+      "te_n_eligible": 81.0,
+      "qb_r2": 0.935,
+      "qb_n_train": 199.0,
+      "rb_r2": 0.727,
+      "rb_n_train": 326.0,
+      "wr_r2": 0.787,
+      "wr_n_train": 504.0,
+      "te_r2": 0.871,
+      "te_n_train": 275.0,
+      "model_trained_at": "2026-06-18"
     }
   ],
   "top_movers": [
@@ -13901,15 +13928,6 @@
       "team": "PHI",
       "value_score_prev": 0.589,
       "value_score": 0.589,
-      "value_score_delta": 0.0,
-      "confidence": "Low"
-    },
-    {
-      "player_name": "Casey Washington",
-      "position": "WR",
-      "team": "ATL",
-      "value_score_prev": 0.583,
-      "value_score": 0.583,
       "value_score_delta": 0.0,
       "confidence": "Low"
     },
@@ -16571,8 +16589,8 @@
       "position": "WR",
       "team": "ATL",
       "offense_snaps": 9.0,
-      "contract_match_quality": "exact",
-      "contract_match_score": 100.0,
+      "contract_match_quality": "no_match",
+      "contract_match_score": 78.788,
       "exclusion_reason": "low_sample"
     },
     {
@@ -16879,8 +16897,8 @@
       "position": "WR",
       "team": "MIA",
       "offense_snaps": 18.0,
-      "contract_match_quality": "no_match",
-      "contract_match_score": 56.0,
+      "contract_match_quality": "exact",
+      "contract_match_score": 100.0,
       "exclusion_reason": "low_sample"
     },
     {
@@ -16902,7 +16920,7 @@
       "team": "JAX",
       "offense_snaps": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 63.636,
+      "contract_match_score": 76.19,
       "exclusion_reason": "low_sample"
     },
     {
@@ -17463,7 +17481,7 @@
       "team": "LAC",
       "offense_snaps": 52.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 55.172,
+      "contract_match_score": 56.296,
       "exclusion_reason": "low_sample"
     },
     {
@@ -17781,8 +17799,8 @@
       "position": "WR",
       "team": "TEN",
       "offense_snaps": 4.0,
-      "contract_match_quality": "no_match",
-      "contract_match_score": 66.667,
+      "contract_match_quality": "exact",
+      "contract_match_score": 100.0,
       "exclusion_reason": "low_sample"
     },
     {
@@ -18913,7 +18931,7 @@
     {
       "position": "WR",
       "contract_match_quality": "exact",
-      "count": 166.0
+      "count": 167.0
     },
     {
       "position": "WR",
@@ -18923,7 +18941,7 @@
     {
       "position": "WR",
       "contract_match_quality": "no_match",
-      "count": 55.0
+      "count": 54.0
     }
   ],
   "fantasy": {
