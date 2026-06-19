@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-18T12:09:52.412784+00:00",
+  "generated_at": "2026-06-19T12:21:56.655770+00:00",
   "current_season": 2024,
-  "model_trained_at": "2026-06-18",
+  "model_trained_at": "2026-06-19",
   "model_metrics": {
     "QB": {
       "n_train": 199,
@@ -686,6 +686,26 @@
       "low_sample": false,
       "value_score": 6.017,
       "confidence": "High"
+    },
+    {
+      "player_id": "00-0037524",
+      "player_name": "Tay Martin",
+      "position": "WR",
+      "team": "TEN",
+      "age": 26.0,
+      "offense_snaps": 4.0,
+      "production": 5.368,
+      "expected_production": -0.625,
+      "production_residual": 5.994,
+      "apy": 1005000.0,
+      "apy_millions": 1.005,
+      "cap_hit": null,
+      "contract_source": "overthecap",
+      "contract_match_quality": "exact",
+      "contract_match_score": 100.0,
+      "low_sample": true,
+      "value_score": 5.964,
+      "confidence": "Low"
     },
     {
       "player_id": "00-0038797",
@@ -6968,6 +6988,26 @@
       "confidence": "High"
     },
     {
+      "player_id": "00-0038092",
+      "player_name": "Erik Ezukanma",
+      "position": "WR",
+      "team": "MIA",
+      "age": 24.0,
+      "offense_snaps": 18.0,
+      "production": -2.419,
+      "expected_production": -0.252,
+      "production_residual": -2.167,
+      "apy": 1145000.0,
+      "apy_millions": 1.145,
+      "cap_hit": null,
+      "contract_source": "overthecap",
+      "contract_match_quality": "exact",
+      "contract_match_score": 100.0,
+      "low_sample": true,
+      "value_score": -1.892,
+      "confidence": "Low"
+    },
+    {
       "player_id": "00-0036232",
       "player_name": "Harrison Bryant",
       "position": "TE",
@@ -9322,7 +9362,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 61.538,
+      "contract_match_score": 66.667,
       "low_sample": false,
       "value_score": null,
       "confidence": "Low"
@@ -10828,26 +10868,6 @@
       "confidence": "Low"
     },
     {
-      "player_id": "00-0037524",
-      "player_name": "Tay Martin",
-      "position": "WR",
-      "team": "TEN",
-      "age": 26.0,
-      "offense_snaps": 4.0,
-      "production": 5.368,
-      "expected_production": -0.625,
-      "production_residual": 5.994,
-      "apy": 0.0,
-      "apy_millions": 0.0,
-      "cap_hit": null,
-      "contract_source": "overthecap",
-      "contract_match_quality": "exact",
-      "contract_match_score": 100.0,
-      "low_sample": true,
-      "value_score": null,
-      "confidence": "Low"
-    },
-    {
       "player_id": "00-0037569",
       "player_name": "Peyton Hendershot",
       "position": "TE",
@@ -10964,26 +10984,6 @@
       "contract_match_quality": "no_match",
       "contract_match_score": 59.375,
       "low_sample": false,
-      "value_score": null,
-      "confidence": "Low"
-    },
-    {
-      "player_id": "00-0038092",
-      "player_name": "Erik Ezukanma",
-      "position": "WR",
-      "team": "MIA",
-      "age": 24.0,
-      "offense_snaps": 18.0,
-      "production": -2.419,
-      "expected_production": -0.252,
-      "production_residual": -2.167,
-      "apy": 0.0,
-      "apy_millions": 0.0,
-      "cap_hit": null,
-      "contract_source": "overthecap",
-      "contract_match_quality": "exact",
-      "contract_match_score": 100.0,
-      "low_sample": true,
       "value_score": null,
       "confidence": "Low"
     },
@@ -12380,6 +12380,33 @@
       "te_r2": 0.871,
       "te_n_train": 275.0,
       "model_trained_at": "2026-06-18"
+    },
+    {
+      "run_at": "2026-06-19T12:21:54.492700+00:00",
+      "run_date": "2026-06-19",
+      "current_season": 2024.0,
+      "n_current": 569.0,
+      "n_eligible": 327.0,
+      "n_low_sample": 159.0,
+      "n_no_match": 141.0,
+      "n_with_contract": 428.0,
+      "qb_n_current": 78.0,
+      "qb_n_eligible": 45.0,
+      "rb_n_current": 145.0,
+      "rb_n_eligible": 67.0,
+      "wr_n_current": 227.0,
+      "wr_n_eligible": 134.0,
+      "te_n_current": 119.0,
+      "te_n_eligible": 81.0,
+      "qb_r2": 0.935,
+      "qb_n_train": 199.0,
+      "rb_r2": 0.727,
+      "rb_n_train": 326.0,
+      "wr_r2": 0.787,
+      "wr_n_train": 504.0,
+      "te_r2": 0.871,
+      "te_n_train": 275.0,
+      "model_trained_at": "2026-06-19"
     }
   ],
   "top_movers": [
@@ -18097,7 +18124,7 @@
       "team": "WAS",
       "offense_snaps": 518.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 61.538,
+      "contract_match_score": 66.667,
       "exclusion_reason": "no_contract_match"
     },
     {
