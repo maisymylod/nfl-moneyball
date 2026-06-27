@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T11:52:42.374806+00:00",
-  "model_trained_at": "2026-06-26",
+  "generated_at": "2026-06-27T11:31:42.147587+00:00",
+  "model_trained_at": "2026-06-27",
   "current_season": 2024,
   "row_counts": {
     "total_current": 569,
@@ -1186,20 +1186,6 @@
           "contract_match_quality": "exact"
         },
         {
-          "player_name": "Brenton Strange",
-          "position": "TE",
-          "team": "JAX",
-          "age": 23.0,
-          "offense_snaps": 575.0,
-          "production": 18.947,
-          "expected_production": 9.983,
-          "production_residual": 8.964,
-          "apy_millions": 1.529,
-          "value_score": 5.864,
-          "confidence": "High",
-          "contract_match_quality": "exact"
-        },
-        {
           "player_name": "Tucker Kraft",
           "position": "TE",
           "team": "GB",
@@ -1239,6 +1225,20 @@
           "apy_millions": 1.35,
           "value_score": 3.305,
           "confidence": "Low",
+          "contract_match_quality": "exact"
+        },
+        {
+          "player_name": "Nate Adkins",
+          "position": "TE",
+          "team": "DEN",
+          "age": 25.0,
+          "offense_snaps": 429.0,
+          "production": 9.081,
+          "expected_production": 3.829,
+          "production_residual": 5.252,
+          "apy_millions": 1.635,
+          "value_score": 3.212,
+          "confidence": "Medium",
           "contract_match_quality": "exact"
         }
       ],

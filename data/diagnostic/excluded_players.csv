@@ -120,7 +120,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0031595,Michael Burton,RB,DEN,,no_match,72.0,low_sample
 2024,00-0034208,Mike Boone,RB,CAR,43.0,fuzzy_low,85.5,low_sample
 2024,00-0034401,Mike White,QB,BUF,20.0,no_match,54.54545454545454,low_sample
-2024,00-0037300,Mike Woods,WR,CLE,,no_match,78.26086956521739,low_sample
+2024,00-0037300,Mike Woods,WR,CLE,,no_match,60.0,low_sample
 2024,00-0035311,Myles Gaskin,RB,JAX,7.0,no_match,60.86956521739131,low_sample
 2024,00-0033319,Nick Mullens,QB,MIN,7.0,exact,100.0,low_sample
 2024,00-0038519,Nikko Remigio,WR,KC,42.0,exact,100.0,low_sample
