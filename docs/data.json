@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-15T11:31:31.240246+00:00",
+  "generated_at": "2026-07-16T11:32:28.911435+00:00",
   "current_season": 2024,
-  "model_trained_at": "2026-07-15",
+  "model_trained_at": "2026-07-16",
   "model_metrics": {
     "QB": {
       "n_train": 199,
@@ -24,7 +24,7 @@
     "total_current": 569,
     "eligible_for_ranking": 327,
     "low_sample": 159,
-    "no_match": 141
+    "no_match": 142
   },
   "players": [
     {
@@ -4768,26 +4768,6 @@
       "confidence": "Medium"
     },
     {
-      "player_id": "00-0037487",
-      "player_name": "Deven Thompkins",
-      "position": "WR",
-      "team": "CAR",
-      "age": 24.0,
-      "offense_snaps": 51.0,
-      "production": -0.274,
-      "expected_production": -0.316,
-      "production_residual": 0.042,
-      "apy": 1215000.0,
-      "apy_millions": 1.215,
-      "cap_hit": null,
-      "contract_source": "overthecap",
-      "contract_match_quality": "exact",
-      "contract_match_score": 100.0,
-      "low_sample": true,
-      "value_score": 0.035,
-      "confidence": "Low"
-    },
-    {
       "player_id": "00-0036158",
       "player_name": "J.K. Dobbins",
       "position": "RB",
@@ -8742,7 +8722,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 73.333,
+      "contract_match_score": 62.069,
       "low_sample": false,
       "value_score": null,
       "confidence": "Low"
@@ -10863,6 +10843,26 @@
       "contract_source": null,
       "contract_match_quality": "no_match",
       "contract_match_score": 64.516,
+      "low_sample": true,
+      "value_score": null,
+      "confidence": "Low"
+    },
+    {
+      "player_id": "00-0037487",
+      "player_name": "Deven Thompkins",
+      "position": "WR",
+      "team": "CAR",
+      "age": 24.0,
+      "offense_snaps": 51.0,
+      "production": -0.274,
+      "expected_production": -0.316,
+      "production_residual": 0.042,
+      "apy": null,
+      "apy_millions": null,
+      "cap_hit": null,
+      "contract_source": null,
+      "contract_match_quality": "no_match",
+      "contract_match_score": 66.667,
       "low_sample": true,
       "value_score": null,
       "confidence": "Low"
@@ -13109,6 +13109,33 @@
       "te_r2": 0.871,
       "te_n_train": 275.0,
       "model_trained_at": "2026-07-15"
+    },
+    {
+      "run_at": "2026-07-16T11:32:26.632169+00:00",
+      "run_date": "2026-07-16",
+      "current_season": 2024.0,
+      "n_current": 569.0,
+      "n_eligible": 327.0,
+      "n_low_sample": 159.0,
+      "n_no_match": 142.0,
+      "n_with_contract": 427.0,
+      "qb_n_current": 78.0,
+      "qb_n_eligible": 45.0,
+      "rb_n_current": 145.0,
+      "rb_n_eligible": 67.0,
+      "wr_n_current": 227.0,
+      "wr_n_eligible": 134.0,
+      "te_n_current": 119.0,
+      "te_n_eligible": 81.0,
+      "qb_r2": 0.935,
+      "qb_n_train": 199.0,
+      "rb_r2": 0.727,
+      "rb_n_train": 326.0,
+      "wr_r2": 0.787,
+      "wr_n_train": 504.0,
+      "te_r2": 0.871,
+      "te_n_train": 275.0,
+      "model_trained_at": "2026-07-16"
     }
   ],
   "top_movers": [
@@ -15244,15 +15271,6 @@
       "value_score": 0.048,
       "value_score_delta": 0.0,
       "confidence": "Medium"
-    },
-    {
-      "player_name": "Deven Thompkins",
-      "position": "WR",
-      "team": "CAR",
-      "value_score_prev": 0.035,
-      "value_score": 0.035,
-      "value_score_delta": 0.0,
-      "confidence": "Low"
     },
     {
       "player_name": "J.K. Dobbins",
@@ -17600,8 +17618,8 @@
       "position": "WR",
       "team": "CAR",
       "offense_snaps": 51.0,
-      "contract_match_quality": "exact",
-      "contract_match_score": 100.0,
+      "contract_match_quality": "no_match",
+      "contract_match_score": 66.667,
       "exclusion_reason": "low_sample"
     },
     {
@@ -18998,7 +19016,7 @@
       "team": "KC",
       "offense_snaps": 582.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 73.333,
+      "contract_match_score": 62.069,
       "exclusion_reason": "no_contract_match"
     },
     {
@@ -19678,7 +19696,7 @@
     {
       "position": "WR",
       "contract_match_quality": "exact",
-      "count": 167.0
+      "count": 166.0
     },
     {
       "position": "WR",
@@ -19688,7 +19706,7 @@
     {
       "position": "WR",
       "contract_match_quality": "no_match",
-      "count": 54.0
+      "count": 55.0
     }
   ],
   "fantasy": {
