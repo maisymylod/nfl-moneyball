@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-23T11:37:44.908103+00:00",
+  "generated_at": "2026-07-24T11:34:12.599371+00:00",
   "current_season": 2024,
-  "model_trained_at": "2026-07-23",
+  "model_trained_at": "2026-07-24",
   "model_metrics": {
     "QB": {
       "n_train": 199,
@@ -22,9 +22,9 @@
   },
   "row_counts": {
     "total_current": 569,
-    "eligible_for_ranking": 327,
+    "eligible_for_ranking": 326,
     "low_sample": 159,
-    "no_match": 142
+    "no_match": 143
   },
   "players": [
     {
@@ -6988,26 +6988,6 @@
       "confidence": "Low"
     },
     {
-      "player_id": "00-0036232",
-      "player_name": "Harrison Bryant",
-      "position": "TE",
-      "team": "LV",
-      "age": 26.0,
-      "offense_snaps": 213.0,
-      "production": -0.278,
-      "expected_production": 2.228,
-      "production_residual": -2.506,
-      "apy": 1265000.0,
-      "apy_millions": 1.265,
-      "cap_hit": null,
-      "contract_source": "overthecap",
-      "contract_match_quality": "exact",
-      "contract_match_score": 100.0,
-      "low_sample": false,
-      "value_score": -1.981,
-      "confidence": "Medium"
-    },
-    {
       "player_id": "00-0038393",
       "player_name": "Dontayvion Wicks",
       "position": "WR",
@@ -9282,7 +9262,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 57.143,
+      "contract_match_score": 50.0,
       "low_sample": false,
       "value_score": null,
       "confidence": "Low"
@@ -10304,6 +10284,26 @@
       "contract_match_quality": "no_match",
       "contract_match_score": 76.19,
       "low_sample": true,
+      "value_score": null,
+      "confidence": "Low"
+    },
+    {
+      "player_id": "00-0036232",
+      "player_name": "Harrison Bryant",
+      "position": "TE",
+      "team": "LV",
+      "age": 26.0,
+      "offense_snaps": 213.0,
+      "production": -0.278,
+      "expected_production": 2.228,
+      "production_residual": -2.506,
+      "apy": null,
+      "apy_millions": null,
+      "cap_hit": null,
+      "contract_source": null,
+      "contract_match_quality": "no_match",
+      "contract_match_score": 69.231,
+      "low_sample": false,
       "value_score": null,
       "confidence": "Low"
     },
@@ -13325,6 +13325,33 @@
       "te_r2": 0.871,
       "te_n_train": 275.0,
       "model_trained_at": "2026-07-23"
+    },
+    {
+      "run_at": "2026-07-24T11:34:10.865644+00:00",
+      "run_date": "2026-07-24",
+      "current_season": 2024.0,
+      "n_current": 569.0,
+      "n_eligible": 326.0,
+      "n_low_sample": 159.0,
+      "n_no_match": 143.0,
+      "n_with_contract": 426.0,
+      "qb_n_current": 78.0,
+      "qb_n_eligible": 45.0,
+      "rb_n_current": 145.0,
+      "rb_n_eligible": 67.0,
+      "wr_n_current": 227.0,
+      "wr_n_eligible": 134.0,
+      "te_n_current": 119.0,
+      "te_n_eligible": 80.0,
+      "qb_r2": 0.935,
+      "qb_n_train": 199.0,
+      "rb_r2": 0.727,
+      "rb_n_train": 326.0,
+      "wr_r2": 0.787,
+      "wr_n_train": 504.0,
+      "te_r2": 0.871,
+      "te_n_train": 275.0,
+      "model_trained_at": "2026-07-24"
     }
   ],
   "top_movers": [
@@ -16461,15 +16488,6 @@
       "confidence": "Low"
     },
     {
-      "player_name": "Harrison Bryant",
-      "position": "TE",
-      "team": "LV",
-      "value_score_prev": -1.981,
-      "value_score": -1.981,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
       "player_name": "Dontayvion Wicks",
       "position": "WR",
       "team": "GB",
@@ -19331,6 +19349,17 @@
     },
     {
       "season": 2024.0,
+      "player_id": "00-0036232",
+      "player_name": "Harrison Bryant",
+      "position": "TE",
+      "team": "LV",
+      "offense_snaps": 213.0,
+      "contract_match_quality": "no_match",
+      "contract_match_score": 69.231,
+      "exclusion_reason": "no_contract_match"
+    },
+    {
+      "season": 2024.0,
       "player_id": "00-0037617",
       "player_name": "Hassan Haskins",
       "position": "RB",
@@ -19601,7 +19630,7 @@
       "team": "SEA",
       "offense_snaps": 264.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 57.143,
+      "contract_match_score": 50.0,
       "exclusion_reason": "no_contract_match"
     },
     {
@@ -19870,7 +19899,7 @@
     {
       "position": "TE",
       "contract_match_quality": "exact",
-      "count": 92.0
+      "count": 91.0
     },
     {
       "position": "TE",
@@ -19880,7 +19909,7 @@
     {
       "position": "TE",
       "contract_match_quality": "no_match",
-      "count": 24.0
+      "count": 25.0
     },
     {
       "position": "WR",
