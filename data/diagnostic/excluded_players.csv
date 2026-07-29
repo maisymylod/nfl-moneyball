@@ -56,7 +56,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0036620,Dee Eskridge,WR,MIA,,no_match,55.38461538461539,low_sample
 2024,00-0036425,DeeJay Dallas,RB,ARI,54.0,exact,100.0,low_sample
 2024,00-0038622,Deuce Vaughn,RB,DAL,52.0,no_match,55.172413793103445,low_sample
-2024,00-0037487,Deven Thompkins,WR,CAR,51.0,no_match,66.66666666666667,low_sample
+2024,00-0037487,Deven Thompkins,WR,CAR,51.0,exact,100.0,low_sample
 2024,00-0039754,Devin Culp,TE,TB,41.0,exact,100.0,low_sample
 2024,00-0039792,Devontez Walker,WR,BAL,60.0,exact,100.0,low_sample
 2024,00-0039407,Dylan Laube,RB,LV,2.0,exact,100.0,low_sample
@@ -108,7 +108,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0038454,Keaton Mitchell,RB,BAL,36.0,exact,100.0,low_sample
 2024,00-0037422,Kendric Pryor,WR,CIN,19.0,exact,100.0,low_sample
 2024,00-0036842,Kene Nwangwu,RB,NYJ,1.0,exact,100.0,low_sample
-2024,00-0038636,Kenny McIntosh,RB,SEA,75.0,exact,100.0,low_sample
+2024,00-0038636,Kenny McIntosh,RB,SEA,75.0,no_match,57.14285714285714,low_sample
 2024,00-0036183,Kristian Wilkerson,WR,LV,45.0,no_match,70.58823529411764,low_sample
 2024,00-0034577,Kyle Allen,QB,PIT,2.0,exact,100.0,low_sample
 2024,00-0029892,Kyle Juszczyk,RB,SF,,no_match,46.15384615384615,low_sample
@@ -183,7 +183,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0034860,Dante Pettis,WR,NO,148.0,no_match,67.5,no_contract_match
 2024,00-0033854,Dare Ogunbowale,RB,HOU,346.0,no_match,51.15384615384615,no_contract_match
 2024,00-0031763,DeAndre Carter,WR,CHI,137.0,no_match,66.66666666666667,no_contract_match
-2024,00-0030564,DeAndre Hopkins,WR,KC,582.0,no_match,62.06896551724138,no_contract_match
+2024,00-0030564,DeAndre Hopkins,WR,KC,582.0,no_match,73.33333333333334,no_contract_match
 2024,00-0035719,Deebo Samuel Sr.,WR,SF,682.0,no_match,57.14285714285714,no_contract_match
 2024,00-0031280,Derek Carr,QB,NO,604.0,no_match,60.0,no_contract_match
 2024,00-0038122,Desmond Ridder,QB,LV,132.0,no_match,56.29629629629629,no_contract_match
@@ -205,7 +205,6 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0033897,Joe Mixon,RB,HOU,645.0,no_match,70.0,no_contract_match
 2024,00-0033858,Jonnu Smith,TE,MIA,626.0,no_match,63.0,no_contract_match
 2024,00-0034364,Jordan Akins,TE,CLE,456.0,no_match,68.39999999999999,no_contract_match
-2024,00-0038678,Jordan Mims,RB,NO,105.0,no_match,78.26086956521739,no_contract_match
 2024,00-0033943,Josh Reynolds,WR,JAX,312.0,no_match,60.86956521739131,no_contract_match
 2024,00-0033923,Kareem Hunt,RB,KC,550.0,no_match,64.0,no_contract_match
 2024,00-0030279,Keenan Allen,WR,CHI,850.0,no_match,64.0,no_contract_match

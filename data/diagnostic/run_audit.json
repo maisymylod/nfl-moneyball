@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-28T11:41:19.618650+00:00",
+  "generated_at": "2026-07-29T11:44:28.576164+00:00",
   "current_season": 2024,
   "row_counts": {
     "players_all_seasons": 2328,
     "players_current_season": 569,
-    "matched_exact_or_fuzzy_high": 412,
-    "no_match": 142,
+    "matched_exact_or_fuzzy_high": 413,
+    "no_match": 141,
     "low_sample": 159
   },
   "contract_sources": {
-    "overthecap": 427,
-    "none": 142
+    "overthecap": 428,
+    "none": 141
   }
 }

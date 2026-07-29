@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-28T11:41:22.820305+00:00",
+  "generated_at": "2026-07-29T11:44:32.453987+00:00",
   "current_season": 2024,
-  "model_trained_at": "2026-07-28",
+  "model_trained_at": "2026-07-29",
   "model_metrics": {
     "QB": {
       "n_train": 199,
@@ -22,9 +22,9 @@
   },
   "row_counts": {
     "total_current": 569,
-    "eligible_for_ranking": 327,
+    "eligible_for_ranking": 328,
     "low_sample": 159,
-    "no_match": 142
+    "no_match": 141
   },
   "players": [
     {
@@ -1465,26 +1465,6 @@
       "contract_match_score": 100.0,
       "low_sample": true,
       "value_score": 3.12,
-      "confidence": "Low"
-    },
-    {
-      "player_id": "00-0038636",
-      "player_name": "Kenny McIntosh",
-      "position": "RB",
-      "team": "SEA",
-      "age": 24.0,
-      "offense_snaps": 75.0,
-      "production": 1.084,
-      "expected_production": -1.916,
-      "production_residual": 3.0,
-      "apy": 982646.0,
-      "apy_millions": 0.983,
-      "cap_hit": null,
-      "contract_source": "overthecap",
-      "contract_match_quality": "exact",
-      "contract_match_score": 100.0,
-      "low_sample": true,
-      "value_score": 3.053,
       "confidence": "Low"
     },
     {
@@ -4788,6 +4768,26 @@
       "confidence": "Medium"
     },
     {
+      "player_id": "00-0037487",
+      "player_name": "Deven Thompkins",
+      "position": "WR",
+      "team": "CAR",
+      "age": 24.0,
+      "offense_snaps": 51.0,
+      "production": -0.274,
+      "expected_production": -0.316,
+      "production_residual": 0.042,
+      "apy": 1215000.0,
+      "apy_millions": 1.215,
+      "cap_hit": null,
+      "contract_source": "overthecap",
+      "contract_match_quality": "exact",
+      "contract_match_score": 100.0,
+      "low_sample": true,
+      "value_score": 0.035,
+      "confidence": "Low"
+    },
+    {
       "player_id": "00-0036158",
       "player_name": "J.K. Dobbins",
       "position": "RB",
@@ -7988,6 +7988,26 @@
       "confidence": "Medium"
     },
     {
+      "player_id": "00-0038678",
+      "player_name": "Jordan Mims",
+      "position": "RB",
+      "team": "NO",
+      "age": 25.0,
+      "offense_snaps": 105.0,
+      "production": -10.835,
+      "expected_production": -5.479,
+      "production_residual": -5.356,
+      "apy": 1005000.0,
+      "apy_millions": 1.005,
+      "cap_hit": null,
+      "contract_source": "overthecap",
+      "contract_match_quality": "exact",
+      "contract_match_score": 100.0,
+      "low_sample": false,
+      "value_score": -5.329,
+      "confidence": "Low"
+    },
+    {
       "player_id": "00-0036387",
       "player_name": "Jalen Reagor",
       "position": "WR",
@@ -8722,7 +8742,7 @@
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 62.069,
+      "contract_match_score": 73.333,
       "low_sample": false,
       "value_score": null,
       "confidence": "Low"
@@ -10848,26 +10868,6 @@
       "confidence": "Low"
     },
     {
-      "player_id": "00-0037487",
-      "player_name": "Deven Thompkins",
-      "position": "WR",
-      "team": "CAR",
-      "age": 24.0,
-      "offense_snaps": 51.0,
-      "production": -0.274,
-      "expected_production": -0.316,
-      "production_residual": 0.042,
-      "apy": null,
-      "apy_millions": null,
-      "cap_hit": null,
-      "contract_source": null,
-      "contract_match_quality": "no_match",
-      "contract_match_score": 66.667,
-      "low_sample": true,
-      "value_score": null,
-      "confidence": "Low"
-    },
-    {
       "player_id": "00-0037569",
       "player_name": "Peyton Hendershot",
       "position": "TE",
@@ -11128,22 +11128,22 @@
       "confidence": "Low"
     },
     {
-      "player_id": "00-0038678",
-      "player_name": "Jordan Mims",
+      "player_id": "00-0038636",
+      "player_name": "Kenny McIntosh",
       "position": "RB",
-      "team": "NO",
-      "age": 25.0,
-      "offense_snaps": 105.0,
-      "production": -10.835,
-      "expected_production": -5.479,
-      "production_residual": -5.356,
+      "team": "SEA",
+      "age": 24.0,
+      "offense_snaps": 75.0,
+      "production": 1.084,
+      "expected_production": -1.916,
+      "production_residual": 3.0,
       "apy": null,
       "apy_millions": null,
       "cap_hit": null,
       "contract_source": null,
       "contract_match_quality": "no_match",
-      "contract_match_score": 78.261,
-      "low_sample": false,
+      "contract_match_score": 57.143,
+      "low_sample": true,
       "value_score": null,
       "confidence": "Low"
     },
@@ -13460,6 +13460,33 @@
       "te_r2": 0.871,
       "te_n_train": 275.0,
       "model_trained_at": "2026-07-28"
+    },
+    {
+      "run_at": "2026-07-29T11:44:30.393108+00:00",
+      "run_date": "2026-07-29",
+      "current_season": 2024.0,
+      "n_current": 569.0,
+      "n_eligible": 328.0,
+      "n_low_sample": 159.0,
+      "n_no_match": 141.0,
+      "n_with_contract": 428.0,
+      "qb_n_current": 78.0,
+      "qb_n_eligible": 45.0,
+      "rb_n_current": 145.0,
+      "rb_n_eligible": 68.0,
+      "wr_n_current": 227.0,
+      "wr_n_eligible": 134.0,
+      "te_n_current": 119.0,
+      "te_n_eligible": 81.0,
+      "qb_r2": 0.935,
+      "qb_n_train": 199.0,
+      "rb_r2": 0.727,
+      "rb_n_train": 326.0,
+      "wr_r2": 0.787,
+      "wr_n_train": 504.0,
+      "te_r2": 0.871,
+      "te_n_train": 275.0,
+      "model_trained_at": "2026-07-29"
     }
   ],
   "top_movers": [
@@ -14108,15 +14135,6 @@
       "team": "LA",
       "value_score_prev": 3.12,
       "value_score": 3.12,
-      "value_score_delta": 0.0,
-      "confidence": "Low"
-    },
-    {
-      "player_name": "Kenny McIntosh",
-      "position": "RB",
-      "team": "SEA",
-      "value_score_prev": 3.053,
-      "value_score": 3.053,
       "value_score_delta": 0.0,
       "confidence": "Low"
     },
@@ -17942,8 +17960,8 @@
       "position": "WR",
       "team": "CAR",
       "offense_snaps": 51.0,
-      "contract_match_quality": "no_match",
-      "contract_match_score": 66.667,
+      "contract_match_quality": "exact",
+      "contract_match_score": 100.0,
       "exclusion_reason": "low_sample"
     },
     {
@@ -18514,8 +18532,8 @@
       "position": "RB",
       "team": "SEA",
       "offense_snaps": 75.0,
-      "contract_match_quality": "exact",
-      "contract_match_score": 100.0,
+      "contract_match_quality": "no_match",
+      "contract_match_score": 57.143,
       "exclusion_reason": "low_sample"
     },
     {
@@ -19340,7 +19358,7 @@
       "team": "KC",
       "offense_snaps": 582.0,
       "contract_match_quality": "no_match",
-      "contract_match_score": 62.069,
+      "contract_match_score": 73.333,
       "exclusion_reason": "no_contract_match"
     },
     {
@@ -19572,17 +19590,6 @@
       "offense_snaps": 456.0,
       "contract_match_quality": "no_match",
       "contract_match_score": 68.4,
-      "exclusion_reason": "no_contract_match"
-    },
-    {
-      "season": 2024.0,
-      "player_id": "00-0038678",
-      "player_name": "Jordan Mims",
-      "position": "RB",
-      "team": "NO",
-      "offense_snaps": 105.0,
-      "contract_match_quality": "no_match",
-      "contract_match_score": 78.261,
       "exclusion_reason": "no_contract_match"
     },
     {
@@ -20020,7 +20027,7 @@
     {
       "position": "WR",
       "contract_match_quality": "exact",
-      "count": 166.0
+      "count": 167.0
     },
     {
       "position": "WR",
@@ -20030,7 +20037,7 @@
     {
       "position": "WR",
       "contract_match_quality": "no_match",
-      "count": 55.0
+      "count": 54.0
     }
   ],
   "fantasy": {
