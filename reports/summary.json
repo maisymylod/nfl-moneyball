@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-30T11:37:26.416523+00:00",
-  "model_trained_at": "2026-07-30",
+  "generated_at": "2026-07-31T11:42:37.057313+00:00",
+  "model_trained_at": "2026-07-31",
   "current_season": 2024,
   "row_counts": {
     "total_current": 569,
-    "eligible_for_ranking": 328,
+    "eligible_for_ranking": 331,
     "low_sample": 159,
-    "no_match": 141
+    "no_match": 137
   },
   "model_metrics": {
     "QB": {
@@ -492,6 +492,20 @@
       "contract_match_quality": "exact"
     },
     {
+      "player_name": "DJ Turner",
+      "position": "WR",
+      "team": "LV",
+      "age": 27.0,
+      "offense_snaps": 358.0,
+      "production": -10.369,
+      "expected_production": 1.891,
+      "production_residual": -12.259,
+      "apy_millions": 1.1,
+      "value_score": -11.145,
+      "confidence": "Medium",
+      "contract_match_quality": "exact"
+    },
+    {
       "player_name": "Elijah Moore",
       "position": "WR",
       "team": "CLE",
@@ -559,6 +573,20 @@
       "apy_millions": 1.062,
       "value_score": -9.558,
       "confidence": "Medium",
+      "contract_match_quality": "exact"
+    },
+    {
+      "player_name": "Cooper Rush",
+      "position": "QB",
+      "team": "DAL",
+      "age": 30.0,
+      "offense_snaps": 572.0,
+      "production": -42.084,
+      "expected_production": -30.555,
+      "production_residual": -11.529,
+      "apy_millions": 1.3,
+      "value_score": -8.869,
+      "confidence": "High",
       "contract_match_quality": "exact"
     },
     {
@@ -700,34 +728,6 @@
       "value_score": -5.896,
       "confidence": "Medium",
       "contract_match_quality": "exact"
-    },
-    {
-      "player_name": "Devin Singletary",
-      "position": "RB",
-      "team": "NYG",
-      "age": 26.0,
-      "offense_snaps": 380.0,
-      "production": -22.386,
-      "expected_production": -14.876,
-      "production_residual": -7.51,
-      "apy_millions": 1.3,
-      "value_score": -5.777,
-      "confidence": "Medium",
-      "contract_match_quality": "exact"
-    },
-    {
-      "player_name": "Theo Johnson",
-      "position": "TE",
-      "team": "NYG",
-      "age": 23.0,
-      "offense_snaps": 683.0,
-      "production": 4.543,
-      "expected_production": 11.483,
-      "production_residual": -6.94,
-      "apy_millions": 1.213,
-      "value_score": -5.722,
-      "confidence": "Medium",
-      "contract_match_quality": "exact"
     }
   ],
   "by_position": {
@@ -834,6 +834,20 @@
           "contract_match_quality": "exact"
         },
         {
+          "player_name": "Cooper Rush",
+          "position": "QB",
+          "team": "DAL",
+          "age": 30.0,
+          "offense_snaps": 572.0,
+          "production": -42.084,
+          "expected_production": -30.555,
+          "production_residual": -11.529,
+          "apy_millions": 1.3,
+          "value_score": -8.869,
+          "confidence": "High",
+          "contract_match_quality": "exact"
+        },
+        {
           "player_name": "Caleb Williams",
           "position": "QB",
           "team": "CHI",
@@ -858,20 +872,6 @@
           "production_residual": -22.565,
           "apy_millions": 4.653,
           "value_score": -4.849,
-          "confidence": "Medium",
-          "contract_match_quality": "exact"
-        },
-        {
-          "player_name": "Drew Lock",
-          "position": "QB",
-          "team": "NYG",
-          "age": 27.0,
-          "offense_snaps": 321.0,
-          "production": -30.647,
-          "expected_production": -21.084,
-          "production_residual": -9.563,
-          "apy_millions": 2.5,
-          "value_score": -3.825,
           "confidence": "Medium",
           "contract_match_quality": "exact"
         }

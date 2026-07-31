@@ -32,7 +32,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0032918,C.J. Ham,RB,MIN,,fuzzy_low,85.5,low_sample
 2024,00-0039631,Cam Grandy,TE,CIN,75.0,exact,100.0,low_sample
 2024,00-0032950,Carson Wentz,QB,KC,38.0,exact,100.0,low_sample
-2024,00-0039394,Casey Washington,WR,ATL,9.0,no_match,78.78787878787878,low_sample
+2024,00-0039394,Casey Washington,WR,ATL,9.0,exact,100.0,low_sample
 2024,00-0038576,Charlie Jones,WR,CIN,26.0,exact,100.0,low_sample
 2024,00-0037809,Chig Okonkwo,TE,TEN,,fuzzy_low,82.75862068965517,low_sample
 2024,00-0036463,Chris Blair,WR,ATL,27.0,exact,100.0,low_sample
@@ -174,12 +174,10 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0034646,Brandon Powell,WR,MIN,217.0,no_match,66.5,no_contract_match
 2024,00-0036414,Cam Akers,RB,MIN,294.0,no_match,60.86956521739131,no_contract_match
 2024,00-0032128,Chris Conley,WR,SF,239.0,no_match,78.26086956521739,no_contract_match
-2024,00-0033662,Cooper Rush,QB,DAL,572.0,no_match,43.47826086956522,no_contract_match
 2024,00-0030578,Cordarrelle Patterson,RB,PIT,110.0,no_match,72.22222222222221,no_contract_match
 2024,00-0033282,Curtis Samuel,WR,BUF,441.0,no_match,60.86956521739131,no_contract_match
 2024,00-0033925,D'Onta Foreman,RB,CLE,195.0,no_match,69.23076923076923,no_contract_match
 2024,00-0034777,DJ Chark,WR,LAC,132.0,no_match,60.00000000000001,no_contract_match
-2024,00-0036527,DJ Turner,WR,LV,358.0,no_match,76.0,no_contract_match
 2024,00-0034860,Dante Pettis,WR,NO,148.0,no_match,67.5,no_contract_match
 2024,00-0033854,Dare Ogunbowale,RB,HOU,346.0,no_match,51.15384615384615,no_contract_match
 2024,00-0031763,DeAndre Carter,WR,CHI,137.0,no_match,66.66666666666667,no_contract_match
@@ -222,7 +220,6 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0031687,Raheem Mostert,RB,MIA,278.0,no_match,64.28571428571428,no_contract_match
 2024,00-0038821,Rakim Jarrett,WR,TB,217.0,no_match,56.29629629629629,no_contract_match
 2024,00-0034407,Ray-Ray McCloud,WR,ATL,981.0,no_match,57.14285714285714,no_contract_match
-2024,00-0034054,River Cracraft,WR,MIA,120.0,no_match,60.8,no_contract_match
 2024,00-0030431,Robert Woods,WR,HOU,404.0,no_match,56.00000000000001,no_contract_match
 2024,00-0034073,Ross Dwelley,TE,ATL,105.0,no_match,54.54545454545454,no_contract_match
 2024,00-0029263,Russell Wilson,QB,PIT,763.0,no_match,67.05882352941177,no_contract_match
