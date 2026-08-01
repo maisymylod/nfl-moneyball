@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-31T11:42:39.831889+00:00",
+  "generated_at": "2026-08-01T11:28:05.225300+00:00",
   "current_season": 2024,
-  "model_trained_at": "2026-07-31",
+  "model_trained_at": "2026-08-01",
   "model_metrics": {
     "QB": {
       "n_train": 199,
@@ -1128,6 +1128,26 @@
       "confidence": "Low"
     },
     {
+      "player_id": "00-0034054",
+      "player_name": "River Cracraft",
+      "position": "WR",
+      "team": "MIA",
+      "age": 29.0,
+      "offense_snaps": 120.0,
+      "production": 4.596,
+      "expected_production": -0.379,
+      "production_residual": 4.975,
+      "apy": 1215000.0,
+      "apy_millions": 1.215,
+      "cap_hit": null,
+      "contract_source": "overthecap",
+      "contract_match_quality": "exact",
+      "contract_match_score": 100.0,
+      "low_sample": false,
+      "value_score": 4.095,
+      "confidence": "Low"
+    },
+    {
       "player_id": "00-0039075",
       "player_name": "Puka Nacua",
       "position": "WR",
@@ -1166,26 +1186,6 @@
       "low_sample": false,
       "value_score": 3.83,
       "confidence": "High"
-    },
-    {
-      "player_id": "00-0034054",
-      "player_name": "River Cracraft",
-      "position": "WR",
-      "team": "MIA",
-      "age": 29.0,
-      "offense_snaps": 120.0,
-      "production": 4.596,
-      "expected_production": -0.379,
-      "production_residual": 4.975,
-      "apy": 1300000.0,
-      "apy_millions": 1.3,
-      "cap_hit": null,
-      "contract_source": "overthecap",
-      "contract_match_quality": "exact",
-      "contract_match_score": 100.0,
-      "low_sample": false,
-      "value_score": 3.827,
-      "confidence": "Low"
     },
     {
       "player_id": "00-0039386",
@@ -5328,6 +5328,26 @@
       "confidence": "Medium"
     },
     {
+      "player_id": "00-0037239",
+      "player_name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "age": 24.0,
+      "offense_snaps": 315.0,
+      "production": 2.373,
+      "expected_production": 7.296,
+      "production_residual": -4.923,
+      "apy": 31000000.0,
+      "apy_millions": 31.0,
+      "cap_hit": null,
+      "contract_source": "overthecap",
+      "contract_match_quality": "exact",
+      "contract_match_score": 100.0,
+      "low_sample": false,
+      "value_score": -0.159,
+      "confidence": "Medium"
+    },
+    {
       "player_id": "00-0036973",
       "player_name": "Travis Etienne",
       "position": "RB",
@@ -6406,26 +6426,6 @@
       "low_sample": false,
       "value_score": -1.012,
       "confidence": "High"
-    },
-    {
-      "player_id": "00-0037239",
-      "player_name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "age": 24.0,
-      "offense_snaps": 315.0,
-      "production": 2.373,
-      "expected_production": 7.296,
-      "production_residual": -4.923,
-      "apy": 4817968.0,
-      "apy_millions": 4.818,
-      "cap_hit": null,
-      "contract_source": "overthecap",
-      "contract_match_quality": "exact",
-      "contract_match_score": 100.0,
-      "low_sample": false,
-      "value_score": -1.022,
-      "confidence": "Medium"
     },
     {
       "player_id": "00-0037292",
@@ -8448,6 +8448,26 @@
       "confidence": "High"
     },
     {
+      "player_id": "00-0036527",
+      "player_name": "DJ Turner",
+      "position": "WR",
+      "team": "LV",
+      "age": 27.0,
+      "offense_snaps": 358.0,
+      "production": -10.369,
+      "expected_production": 1.891,
+      "production_residual": -12.259,
+      "apy": 1145000.0,
+      "apy_millions": 1.145,
+      "cap_hit": null,
+      "contract_source": "overthecap",
+      "contract_match_quality": "exact",
+      "contract_match_score": 100.0,
+      "low_sample": false,
+      "value_score": -10.707,
+      "confidence": "Medium"
+    },
+    {
       "player_id": "00-0039907",
       "player_name": "Ja'Lynn Polk",
       "position": "WR",
@@ -8486,26 +8506,6 @@
       "low_sample": false,
       "value_score": -10.871,
       "confidence": "High"
-    },
-    {
-      "player_id": "00-0036527",
-      "player_name": "DJ Turner",
-      "position": "WR",
-      "team": "LV",
-      "age": 27.0,
-      "offense_snaps": 358.0,
-      "production": -10.369,
-      "expected_production": 1.891,
-      "production_residual": -12.259,
-      "apy": 1100000.0,
-      "apy_millions": 1.1,
-      "cap_hit": null,
-      "contract_source": "overthecap",
-      "contract_match_quality": "exact",
-      "contract_match_score": 100.0,
-      "low_sample": false,
-      "value_score": -11.145,
-      "confidence": "Medium"
     },
     {
       "player_id": "00-0039890",
@@ -13541,26 +13541,71 @@
       "te_r2": 0.871,
       "te_n_train": 275.0,
       "model_trained_at": "2026-07-31"
+    },
+    {
+      "run_at": "2026-08-01T11:28:02.869207+00:00",
+      "run_date": "2026-08-01",
+      "current_season": 2024.0,
+      "n_current": 569.0,
+      "n_eligible": 331.0,
+      "n_low_sample": 159.0,
+      "n_no_match": 137.0,
+      "n_with_contract": 432.0,
+      "qb_n_current": 78.0,
+      "qb_n_eligible": 46.0,
+      "rb_n_current": 145.0,
+      "rb_n_eligible": 68.0,
+      "wr_n_current": 227.0,
+      "wr_n_eligible": 136.0,
+      "te_n_current": 119.0,
+      "te_n_eligible": 81.0,
+      "qb_r2": 0.935,
+      "qb_n_train": 199.0,
+      "rb_r2": 0.727,
+      "rb_n_train": 326.0,
+      "wr_r2": 0.787,
+      "wr_n_train": 504.0,
+      "te_r2": 0.871,
+      "te_n_train": 275.0,
+      "model_trained_at": "2026-08-01"
     }
   ],
   "top_movers": [
     {
-      "player_name": "Jacoby Brissett",
-      "position": "QB",
-      "team": "NE",
-      "value_score_prev": -2.756,
-      "value_score": -1.111,
-      "value_score_delta": 1.644,
+      "player_name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "value_score_prev": -1.022,
+      "value_score": -0.159,
+      "value_score_delta": 0.863,
       "confidence": "Medium"
     },
     {
-      "player_name": "John Bates",
-      "position": "TE",
-      "team": "WAS",
-      "value_score_prev": -0.519,
-      "value_score": -0.519,
+      "player_name": "DJ Turner",
+      "position": "WR",
+      "team": "LV",
+      "value_score_prev": -11.145,
+      "value_score": -10.707,
+      "value_score_delta": 0.438,
+      "confidence": "Medium"
+    },
+    {
+      "player_name": "River Cracraft",
+      "position": "WR",
+      "team": "MIA",
+      "value_score_prev": 3.827,
+      "value_score": 4.095,
+      "value_score_delta": 0.268,
+      "confidence": "Low"
+    },
+    {
+      "player_name": "Tanner Conner",
+      "position": "WR",
+      "team": "MIA",
+      "value_score_prev": -0.488,
+      "value_score": -0.488,
       "value_score_delta": 0.0,
-      "confidence": "High"
+      "confidence": "Low"
     },
     {
       "player_name": "Javonte Williams",
@@ -13662,15 +13707,6 @@
       "confidence": "Medium"
     },
     {
-      "player_name": "Dalton Schultz",
-      "position": "TE",
-      "team": "HOU",
-      "value_score_prev": -0.348,
-      "value_score": -0.348,
-      "value_score_delta": 0.0,
-      "confidence": "High"
-    },
-    {
       "player_name": "T.J. Hockenson",
       "position": "TE",
       "team": "MIN",
@@ -13770,6 +13806,33 @@
       "confidence": "Low"
     },
     {
+      "player_name": "Mo Alie-Cox",
+      "position": "TE",
+      "team": "IND",
+      "value_score_prev": -0.225,
+      "value_score": -0.225,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
+    },
+    {
+      "player_name": "Dalton Schultz",
+      "position": "TE",
+      "team": "HOU",
+      "value_score_prev": -0.348,
+      "value_score": -0.348,
+      "value_score_delta": 0.0,
+      "confidence": "High"
+    },
+    {
+      "player_name": "Rome Odunze",
+      "position": "WR",
+      "team": "CHI",
+      "value_score_prev": -1.075,
+      "value_score": -1.075,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
+    },
+    {
       "player_name": "Grant Calcaterra",
       "position": "TE",
       "team": "PHI",
@@ -13779,29 +13842,11 @@
       "confidence": "High"
     },
     {
-      "player_name": "Tanner Conner",
-      "position": "WR",
-      "team": "MIA",
-      "value_score_prev": -0.488,
-      "value_score": -0.488,
-      "value_score_delta": 0.0,
-      "confidence": "Low"
-    },
-    {
       "player_name": "Andrew Ogletree",
       "position": "TE",
       "team": "IND",
       "value_score_prev": -1.041,
       "value_score": -1.041,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "value_score_prev": -1.022,
-      "value_score": -1.022,
       "value_score_delta": 0.0,
       "confidence": "Medium"
     },
@@ -13887,20 +13932,20 @@
       "confidence": "High"
     },
     {
-      "player_name": "Durham Smythe",
+      "player_name": "John Bates",
       "position": "TE",
-      "team": "MIA",
-      "value_score_prev": -0.865,
-      "value_score": -0.865,
+      "team": "WAS",
+      "value_score_prev": -0.519,
+      "value_score": -0.519,
       "value_score_delta": 0.0,
-      "confidence": "Medium"
+      "confidence": "High"
     },
     {
-      "player_name": "Mo Alie-Cox",
-      "position": "TE",
-      "team": "IND",
-      "value_score_prev": -0.225,
-      "value_score": -0.225,
+      "player_name": "Luke McCaffrey",
+      "position": "WR",
+      "team": "WAS",
+      "value_score_prev": -0.861,
+      "value_score": -0.861,
       "value_score_delta": 0.0,
       "confidence": "Medium"
     },
@@ -14013,13 +14058,22 @@
       "confidence": "High"
     },
     {
-      "player_name": "Luke McCaffrey",
-      "position": "WR",
-      "team": "WAS",
-      "value_score_prev": -0.861,
-      "value_score": -0.861,
+      "player_name": "Durham Smythe",
+      "position": "TE",
+      "team": "MIA",
+      "value_score_prev": -0.865,
+      "value_score": -0.865,
       "value_score_delta": 0.0,
       "confidence": "Medium"
+    },
+    {
+      "player_name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "value_score_prev": -0.008,
+      "value_score": -0.008,
+      "value_score_delta": 0.0,
+      "confidence": "High"
     },
     {
       "player_name": "Mike Evans",
@@ -14121,15 +14175,6 @@
       "confidence": "High"
     },
     {
-      "player_name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "value_score_prev": 0.092,
-      "value_score": 0.092,
-      "value_score_delta": 0.0,
-      "confidence": "Low"
-    },
-    {
       "player_name": "Adam Trautman",
       "position": "TE",
       "team": "DEN",
@@ -14137,6 +14182,15 @@
       "value_score": -0.223,
       "value_score_delta": 0.0,
       "confidence": "High"
+    },
+    {
+      "player_name": "Shane Zylstra",
+      "position": "TE",
+      "team": "DET",
+      "value_score_prev": 0.097,
+      "value_score": 0.097,
+      "value_score_delta": 0.0,
+      "confidence": "Low"
     },
     {
       "player_name": "Amon-Ra St. Brown",
@@ -14247,22 +14301,22 @@
       "confidence": "High"
     },
     {
-      "player_name": "A.J. Brown",
-      "position": "WR",
-      "team": "PHI",
-      "value_score_prev": 0.172,
-      "value_score": 0.172,
-      "value_score_delta": 0.0,
-      "confidence": "High"
-    },
-    {
-      "player_name": "Shane Zylstra",
-      "position": "TE",
-      "team": "DET",
-      "value_score_prev": 0.097,
-      "value_score": 0.097,
+      "player_name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "value_score_prev": 0.092,
+      "value_score": 0.092,
       "value_score_delta": 0.0,
       "confidence": "Low"
+    },
+    {
+      "player_name": "Jacoby Brissett",
+      "position": "QB",
+      "team": "NE",
+      "value_score_prev": -1.111,
+      "value_score": -1.111,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
     },
     {
       "player_name": "Kyle Pitts",
@@ -14364,22 +14418,22 @@
       "confidence": "Medium"
     },
     {
-      "player_name": "Patrick Mahomes",
+      "player_name": "Matthew Stafford",
       "position": "QB",
-      "team": "KC",
-      "value_score_prev": -0.088,
-      "value_score": -0.088,
+      "team": "LA",
+      "value_score_prev": -0.021,
+      "value_score": -0.021,
       "value_score_delta": 0.0,
-      "confidence": "High"
+      "confidence": "Low"
     },
     {
-      "player_name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "value_score_prev": -0.008,
-      "value_score": -0.008,
+      "player_name": "Johnny Mundt",
+      "position": "TE",
+      "team": "MIN",
+      "value_score_prev": -0.083,
+      "value_score": -0.083,
       "value_score_delta": 0.0,
-      "confidence": "High"
+      "confidence": "Medium"
     },
     {
       "player_name": "Calvin Ridley",
@@ -14490,22 +14544,13 @@
       "confidence": "High"
     },
     {
-      "player_name": "Matthew Stafford",
+      "player_name": "Patrick Mahomes",
       "position": "QB",
-      "team": "LA",
-      "value_score_prev": -0.021,
-      "value_score": -0.021,
+      "team": "KC",
+      "value_score_prev": -0.088,
+      "value_score": -0.088,
       "value_score_delta": 0.0,
-      "confidence": "Low"
-    },
-    {
-      "player_name": "Johnny Mundt",
-      "position": "TE",
-      "team": "MIN",
-      "value_score_prev": -0.083,
-      "value_score": -0.083,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
+      "confidence": "High"
     },
     {
       "player_name": "Carson Steele",
@@ -14526,20 +14571,29 @@
       "confidence": "Low"
     },
     {
-      "player_name": "Skylar Thompson",
+      "player_name": "Cooper Rush",
       "position": "QB",
-      "team": "MIA",
-      "value_score_prev": -7.759,
-      "value_score": -7.759,
+      "team": "DAL",
+      "value_score_prev": -8.869,
+      "value_score": -8.869,
       "value_score_delta": 0.0,
-      "confidence": "Low"
+      "confidence": "High"
     },
     {
-      "player_name": "Ryan Flournoy",
-      "position": "WR",
-      "team": "DAL",
-      "value_score_prev": -7.584,
-      "value_score": -7.584,
+      "player_name": "Blake Whiteheart",
+      "position": "TE",
+      "team": "CLE",
+      "value_score_prev": -5.171,
+      "value_score": -5.171,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
+    },
+    {
+      "player_name": "Bailey Zappe",
+      "position": "QB",
+      "team": "CLE",
+      "value_score_prev": -5.102,
+      "value_score": -5.102,
       "value_score_delta": 0.0,
       "confidence": "Low"
     },
@@ -14607,20 +14661,20 @@
       "confidence": "Low"
     },
     {
-      "player_name": "Van Jefferson",
-      "position": "WR",
-      "team": "PIT",
-      "value_score_prev": -3.89,
-      "value_score": -3.89,
+      "player_name": "Brevyn Spann-Ford",
+      "position": "TE",
+      "team": "DAL",
+      "value_score_prev": -1.147,
+      "value_score": -1.147,
       "value_score_delta": 0.0,
-      "confidence": "High"
+      "confidence": "Medium"
     },
     {
-      "player_name": "Rome Odunze",
-      "position": "WR",
-      "team": "CHI",
-      "value_score_prev": -1.075,
-      "value_score": -1.075,
+      "player_name": "Drew Lock",
+      "position": "QB",
+      "team": "NYG",
+      "value_score_prev": -3.825,
+      "value_score": -3.825,
       "value_score_delta": 0.0,
       "confidence": "Medium"
     },
@@ -14724,139 +14778,22 @@
       "confidence": "Low"
     },
     {
-      "player_name": "Ian Thomas",
-      "position": "TE",
-      "team": "CAR",
-      "value_score_prev": -3.03,
-      "value_score": -3.03,
-      "value_score_delta": 0.0,
-      "confidence": "Low"
-    },
-    {
-      "player_name": "Drew Lock",
-      "position": "QB",
-      "team": "NYG",
-      "value_score_prev": -3.825,
-      "value_score": -3.825,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Mike Williams",
+      "player_name": "Van Jefferson",
       "position": "WR",
       "team": "PIT",
-      "value_score_prev": 6.74,
-      "value_score": 6.74,
-      "value_score_delta": 0.0,
-      "confidence": "Low"
-    },
-    {
-      "player_name": "Hendon Hooker",
-      "position": "QB",
-      "team": "DET",
-      "value_score_prev": 6.914,
-      "value_score": 6.914,
-      "value_score_delta": 0.0,
-      "confidence": "Low"
-    },
-    {
-      "player_name": "Tyrell Shavers",
-      "position": "WR",
-      "team": "BUF",
-      "value_score_prev": 7.096,
-      "value_score": 7.096,
-      "value_score_delta": 0.0,
-      "confidence": "Low"
-    },
-    {
-      "player_name": "Tutu Atwell",
-      "position": "WR",
-      "team": "LA",
-      "value_score_prev": 7.178,
-      "value_score": 7.178,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Chris Oladokun",
-      "position": "QB",
-      "team": "KC",
-      "value_score_prev": 7.198,
-      "value_score": 7.198,
-      "value_score_delta": 0.0,
-      "confidence": "Low"
-    },
-    {
-      "player_name": "Mecole Hardman",
-      "position": "WR",
-      "team": "KC",
-      "value_score_prev": 7.39,
-      "value_score": 7.39,
-      "value_score_delta": 0.0,
-      "confidence": "Low"
-    },
-    {
-      "player_name": "Justice Hill",
-      "position": "RB",
-      "team": "BAL",
-      "value_score_prev": 7.763,
-      "value_score": 7.763,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Marvin Mims Jr.",
-      "position": "WR",
-      "team": "DEN",
-      "value_score_prev": 8.61,
-      "value_score": 8.61,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Ty Johnson",
-      "position": "RB",
-      "team": "BUF",
-      "value_score_prev": 8.971,
-      "value_score": 8.971,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Brian Thomas Jr.",
-      "position": "WR",
-      "team": "JAX",
-      "value_score_prev": 9.038,
-      "value_score": 9.038,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Michael Penix Jr.",
-      "position": "QB",
-      "team": "ATL",
-      "value_score_prev": 9.073,
-      "value_score": 9.073,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Samaje Perine",
-      "position": "RB",
-      "team": "KC",
-      "value_score_prev": 9.259,
-      "value_score": 9.259,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Will Levis",
-      "position": "QB",
-      "team": "TEN",
-      "value_score_prev": -9.805,
-      "value_score": -9.805,
+      "value_score_prev": -3.89,
+      "value_score": -3.89,
       "value_score_delta": 0.0,
       "confidence": "High"
+    },
+    {
+      "player_name": "Jeremy McNichols",
+      "position": "RB",
+      "team": "WAS",
+      "value_score_prev": 9.524,
+      "value_score": 9.524,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
     },
     {
       "player_name": "Roschon Johnson",
@@ -14875,6 +14812,114 @@
       "value_score": 10.514,
       "value_score_delta": 0.0,
       "confidence": "Low"
+    },
+    {
+      "player_name": "Chase Brown",
+      "position": "RB",
+      "team": "CIN",
+      "value_score_prev": 10.649,
+      "value_score": 10.649,
+      "value_score_delta": 0.0,
+      "confidence": "High"
+    },
+    {
+      "player_name": "Isaiah Davis",
+      "position": "RB",
+      "team": "NYJ",
+      "value_score_prev": 13.07,
+      "value_score": 13.07,
+      "value_score_delta": 0.0,
+      "confidence": "Low"
+    },
+    {
+      "player_name": "Ray Davis",
+      "position": "RB",
+      "team": "BUF",
+      "value_score_prev": 14.392,
+      "value_score": 14.392,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
+    },
+    {
+      "player_name": "Tua Tagovailoa",
+      "position": "QB",
+      "team": "MIA",
+      "value_score_prev": 15.287,
+      "value_score": 15.287,
+      "value_score_delta": 0.0,
+      "confidence": "High"
+    },
+    {
+      "player_name": "Isaac Guerendo",
+      "position": "RB",
+      "team": "SF",
+      "value_score_prev": 15.908,
+      "value_score": 15.908,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
+    },
+    {
+      "player_name": "Jordan Whittington",
+      "position": "WR",
+      "team": "LA",
+      "value_score_prev": 16.377,
+      "value_score": 16.377,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
+    },
+    {
+      "player_name": "Ladd McConkey",
+      "position": "WR",
+      "team": "LAC",
+      "value_score_prev": 18.495,
+      "value_score": 18.495,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
+    },
+    {
+      "player_name": "Aidan O'Connell",
+      "position": "QB",
+      "team": "LV",
+      "value_score_prev": 20.174,
+      "value_score": 20.174,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
+    },
+    {
+      "player_name": "Joe Milton III",
+      "position": "QB",
+      "team": "NE",
+      "value_score_prev": 29.224,
+      "value_score": 29.224,
+      "value_score_delta": 0.0,
+      "confidence": "Low"
+    },
+    {
+      "player_name": "Will Levis",
+      "position": "QB",
+      "team": "TEN",
+      "value_score_prev": -9.805,
+      "value_score": -9.805,
+      "value_score_delta": 0.0,
+      "confidence": "High"
+    },
+    {
+      "player_name": "Tanner McKee",
+      "position": "QB",
+      "team": "PHI",
+      "value_score_prev": 34.647,
+      "value_score": 34.647,
+      "value_score_delta": 0.0,
+      "confidence": "Low"
+    },
+    {
+      "player_name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "value_score_prev": 36.357,
+      "value_score": 36.357,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
     },
     {
       "player_name": "Spencer Rattler",
@@ -14976,11 +15021,20 @@
       "confidence": "High"
     },
     {
-      "player_name": "Jeremy McNichols",
-      "position": "RB",
-      "team": "WAS",
-      "value_score_prev": 9.524,
-      "value_score": 9.524,
+      "player_name": "Devaughn Vele",
+      "position": "WR",
+      "team": "DEN",
+      "value_score_prev": 30.111,
+      "value_score": 30.111,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
+    },
+    {
+      "player_name": "Bo Melton",
+      "position": "WR",
+      "team": "GB",
+      "value_score_prev": -1.871,
+      "value_score": -1.871,
       "value_score_delta": 0.0,
       "confidence": "Medium"
     },
@@ -15084,20 +15138,20 @@
       "confidence": "Low"
     },
     {
-      "player_name": "John Metchie III",
-      "position": "WR",
-      "team": "HOU",
-      "value_score_prev": -1.438,
-      "value_score": -1.438,
+      "player_name": "Ian Thomas",
+      "position": "TE",
+      "team": "CAR",
+      "value_score_prev": -3.03,
+      "value_score": -3.03,
       "value_score_delta": 0.0,
-      "confidence": "Medium"
+      "confidence": "Low"
     },
     {
-      "player_name": "Julius Chestnut",
-      "position": "RB",
-      "team": "TEN",
-      "value_score_prev": -3.02,
-      "value_score": -3.02,
+      "player_name": "Feleipe Franks",
+      "position": "TE",
+      "team": "CAR",
+      "value_score_prev": -1.361,
+      "value_score": -1.361,
       "value_score_delta": 0.0,
       "confidence": "Low"
     },
@@ -15201,29 +15255,29 @@
       "confidence": "High"
     },
     {
-      "player_name": "Brevyn Spann-Ford",
-      "position": "TE",
-      "team": "DAL",
-      "value_score_prev": -1.147,
-      "value_score": -1.147,
+      "player_name": "A.J. Brown",
+      "position": "WR",
+      "team": "PHI",
+      "value_score_prev": 0.172,
+      "value_score": 0.172,
+      "value_score_delta": 0.0,
+      "confidence": "High"
+    },
+    {
+      "player_name": "John Metchie III",
+      "position": "WR",
+      "team": "HOU",
+      "value_score_prev": -1.438,
+      "value_score": -1.438,
       "value_score_delta": 0.0,
       "confidence": "Medium"
     },
     {
-      "player_name": "Tanner McKee",
-      "position": "QB",
-      "team": "PHI",
-      "value_score_prev": 34.647,
-      "value_score": 34.647,
-      "value_score_delta": 0.0,
-      "confidence": "Low"
-    },
-    {
-      "player_name": "Feleipe Franks",
-      "position": "TE",
-      "team": "CAR",
-      "value_score_prev": -1.361,
-      "value_score": -1.361,
+      "player_name": "Julius Chestnut",
+      "position": "RB",
+      "team": "TEN",
+      "value_score_prev": -3.02,
+      "value_score": -3.02,
       "value_score_delta": 0.0,
       "confidence": "Low"
     },
@@ -15327,22 +15381,22 @@
       "confidence": "Low"
     },
     {
-      "player_name": "Amari Cooper",
-      "position": "WR",
-      "team": "BUF",
-      "value_score_prev": -2.604,
-      "value_score": -2.604,
+      "player_name": "Brian Robinson",
+      "position": "RB",
+      "team": "WAS",
+      "value_score_prev": -1.88,
+      "value_score": -1.88,
       "value_score_delta": 0.0,
-      "confidence": "Low"
+      "confidence": "High"
     },
     {
-      "player_name": "Bo Melton",
-      "position": "WR",
-      "team": "GB",
-      "value_score_prev": -1.871,
-      "value_score": -1.871,
+      "player_name": "Brenden Bates",
+      "position": "TE",
+      "team": "CLE",
+      "value_score_prev": -2.601,
+      "value_score": -2.601,
       "value_score_delta": 0.0,
-      "confidence": "Medium"
+      "confidence": "Low"
     },
     {
       "player_name": "Jaheim Bell",
@@ -15453,22 +15507,22 @@
       "confidence": "Low"
     },
     {
-      "player_name": "Brian Robinson",
-      "position": "RB",
-      "team": "WAS",
-      "value_score_prev": -1.88,
-      "value_score": -1.88,
-      "value_score_delta": 0.0,
-      "confidence": "High"
-    },
-    {
-      "player_name": "Brenden Bates",
-      "position": "TE",
-      "team": "CLE",
-      "value_score_prev": -2.601,
-      "value_score": -2.601,
+      "player_name": "Amari Cooper",
+      "position": "WR",
+      "team": "BUF",
+      "value_score_prev": -2.604,
+      "value_score": -2.604,
       "value_score_delta": 0.0,
       "confidence": "Low"
+    },
+    {
+      "player_name": "Jordan Addison",
+      "position": "WR",
+      "team": "MIN",
+      "value_score_prev": 2.701,
+      "value_score": 2.701,
+      "value_score_delta": 0.0,
+      "confidence": "High"
     },
     {
       "player_name": "Scott Miller",
@@ -15570,15 +15624,6 @@
       "confidence": "Medium"
     },
     {
-      "player_name": "Rachaad White",
-      "position": "RB",
-      "team": "TB",
-      "value_score_prev": 3.224,
-      "value_score": 3.224,
-      "value_score_delta": 0.0,
-      "confidence": "High"
-    },
-    {
       "player_name": "Davante Adams",
       "position": "WR",
       "team": "NYJ",
@@ -15586,6 +15631,15 @@
       "value_score": 0.176,
       "value_score_delta": 0.0,
       "confidence": "High"
+    },
+    {
+      "player_name": "Tanner Hudson",
+      "position": "TE",
+      "team": "CIN",
+      "value_score_prev": 3.305,
+      "value_score": 3.305,
+      "value_score_delta": 0.0,
+      "confidence": "Low"
     },
     {
       "player_name": "Jauan Jennings",
@@ -15696,13 +15750,22 @@
       "confidence": "Low"
     },
     {
-      "player_name": "Tanner Hudson",
-      "position": "TE",
-      "team": "CIN",
-      "value_score_prev": 3.305,
-      "value_score": 3.305,
+      "player_name": "Rachaad White",
+      "position": "RB",
+      "team": "TB",
+      "value_score_prev": 3.224,
+      "value_score": 3.224,
       "value_score_delta": 0.0,
-      "confidence": "Low"
+      "confidence": "High"
+    },
+    {
+      "player_name": "Ricky Pearsall",
+      "position": "WR",
+      "team": "SF",
+      "value_score_prev": 1.646,
+      "value_score": 1.646,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
     },
     {
       "player_name": "Jameis Winston",
@@ -15804,20 +15867,20 @@
       "confidence": "Medium"
     },
     {
-      "player_name": "Andrei Iosivas",
-      "position": "WR",
-      "team": "CIN",
-      "value_score_prev": 2.064,
-      "value_score": 2.064,
+      "player_name": "Dameon Pierce",
+      "position": "RB",
+      "team": "HOU",
+      "value_score_prev": 2.679,
+      "value_score": 2.679,
       "value_score_delta": 0.0,
-      "confidence": "High"
+      "confidence": "Low"
     },
     {
-      "player_name": "Jordan Addison",
-      "position": "WR",
-      "team": "MIN",
-      "value_score_prev": 2.701,
-      "value_score": 2.701,
+      "player_name": "Foster Moreau",
+      "position": "TE",
+      "team": "NO",
+      "value_score_prev": 2.084,
+      "value_score": 2.084,
       "value_score_delta": 0.0,
       "confidence": "High"
     },
@@ -15930,20 +15993,137 @@
       "confidence": "Low"
     },
     {
-      "player_name": "Dameon Pierce",
-      "position": "RB",
-      "team": "HOU",
-      "value_score_prev": 2.679,
-      "value_score": 2.679,
+      "player_name": "Andrei Iosivas",
+      "position": "WR",
+      "team": "CIN",
+      "value_score_prev": 2.064,
+      "value_score": 2.064,
+      "value_score_delta": 0.0,
+      "confidence": "High"
+    },
+    {
+      "player_name": "Hendon Hooker",
+      "position": "QB",
+      "team": "DET",
+      "value_score_prev": 6.914,
+      "value_score": 6.914,
       "value_score_delta": 0.0,
       "confidence": "Low"
     },
     {
-      "player_name": "Foster Moreau",
+      "player_name": "Tyrell Shavers",
+      "position": "WR",
+      "team": "BUF",
+      "value_score_prev": 7.096,
+      "value_score": 7.096,
+      "value_score_delta": 0.0,
+      "confidence": "Low"
+    },
+    {
+      "player_name": "Tutu Atwell",
+      "position": "WR",
+      "team": "LA",
+      "value_score_prev": 7.178,
+      "value_score": 7.178,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
+    },
+    {
+      "player_name": "Chris Oladokun",
+      "position": "QB",
+      "team": "KC",
+      "value_score_prev": 7.198,
+      "value_score": 7.198,
+      "value_score_delta": 0.0,
+      "confidence": "Low"
+    },
+    {
+      "player_name": "Mecole Hardman",
+      "position": "WR",
+      "team": "KC",
+      "value_score_prev": 7.39,
+      "value_score": 7.39,
+      "value_score_delta": 0.0,
+      "confidence": "Low"
+    },
+    {
+      "player_name": "Justice Hill",
+      "position": "RB",
+      "team": "BAL",
+      "value_score_prev": 7.763,
+      "value_score": 7.763,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
+    },
+    {
+      "player_name": "Marvin Mims Jr.",
+      "position": "WR",
+      "team": "DEN",
+      "value_score_prev": 8.61,
+      "value_score": 8.61,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
+    },
+    {
+      "player_name": "Ty Johnson",
+      "position": "RB",
+      "team": "BUF",
+      "value_score_prev": 8.971,
+      "value_score": 8.971,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
+    },
+    {
+      "player_name": "Brian Thomas Jr.",
+      "position": "WR",
+      "team": "JAX",
+      "value_score_prev": 9.038,
+      "value_score": 9.038,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
+    },
+    {
+      "player_name": "Michael Penix Jr.",
+      "position": "QB",
+      "team": "ATL",
+      "value_score_prev": 9.073,
+      "value_score": 9.073,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
+    },
+    {
+      "player_name": "Skylar Thompson",
+      "position": "QB",
+      "team": "MIA",
+      "value_score_prev": -7.759,
+      "value_score": -7.759,
+      "value_score_delta": 0.0,
+      "confidence": "Low"
+    },
+    {
+      "player_name": "Ryan Flournoy",
+      "position": "WR",
+      "team": "DAL",
+      "value_score_prev": -7.584,
+      "value_score": -7.584,
+      "value_score_delta": 0.0,
+      "confidence": "Low"
+    },
+    {
+      "player_name": "Trey Palmer",
+      "position": "WR",
+      "team": "TB",
+      "value_score_prev": 4.176,
+      "value_score": 4.176,
+      "value_score_delta": 0.0,
+      "confidence": "Medium"
+    },
+    {
+      "player_name": "Tyler Conklin",
       "position": "TE",
-      "team": "NO",
-      "value_score_prev": 2.084,
-      "value_score": 2.084,
+      "team": "NYJ",
+      "value_score_prev": -7.297,
+      "value_score": -7.297,
       "value_score_delta": 0.0,
       "confidence": "High"
     },
@@ -16056,139 +16236,13 @@
       "confidence": "Low"
     },
     {
-      "player_name": "Trey Palmer",
+      "player_name": "Michael Wilson",
       "position": "WR",
-      "team": "TB",
-      "value_score_prev": 4.176,
-      "value_score": 4.176,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "value_score_prev": 36.357,
-      "value_score": 36.357,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Payne Durham",
-      "position": "TE",
-      "team": "TB",
-      "value_score_prev": 6.606,
-      "value_score": 6.606,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Bailey Zappe",
-      "position": "QB",
-      "team": "CLE",
-      "value_score_prev": -5.102,
-      "value_score": -5.102,
-      "value_score_delta": 0.0,
-      "confidence": "Low"
-    },
-    {
-      "player_name": "Chase Brown",
-      "position": "RB",
-      "team": "CIN",
-      "value_score_prev": 10.649,
-      "value_score": 10.649,
+      "team": "ARI",
+      "value_score_prev": -7.311,
+      "value_score": -7.311,
       "value_score_delta": 0.0,
       "confidence": "High"
-    },
-    {
-      "player_name": "Isaiah Davis",
-      "position": "RB",
-      "team": "NYJ",
-      "value_score_prev": 13.07,
-      "value_score": 13.07,
-      "value_score_delta": 0.0,
-      "confidence": "Low"
-    },
-    {
-      "player_name": "Ray Davis",
-      "position": "RB",
-      "team": "BUF",
-      "value_score_prev": 14.392,
-      "value_score": 14.392,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Tua Tagovailoa",
-      "position": "QB",
-      "team": "MIA",
-      "value_score_prev": 15.287,
-      "value_score": 15.287,
-      "value_score_delta": 0.0,
-      "confidence": "High"
-    },
-    {
-      "player_name": "Isaac Guerendo",
-      "position": "RB",
-      "team": "SF",
-      "value_score_prev": 15.908,
-      "value_score": 15.908,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Jordan Whittington",
-      "position": "WR",
-      "team": "LA",
-      "value_score_prev": 16.377,
-      "value_score": 16.377,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Ladd McConkey",
-      "position": "WR",
-      "team": "LAC",
-      "value_score_prev": 18.495,
-      "value_score": 18.495,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Aidan O'Connell",
-      "position": "QB",
-      "team": "LV",
-      "value_score_prev": 20.174,
-      "value_score": 20.174,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Joe Milton III",
-      "position": "QB",
-      "team": "NE",
-      "value_score_prev": 29.224,
-      "value_score": 29.224,
-      "value_score_delta": 0.0,
-      "confidence": "Low"
-    },
-    {
-      "player_name": "Devaughn Vele",
-      "position": "WR",
-      "team": "DEN",
-      "value_score_prev": 30.111,
-      "value_score": 30.111,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
-    },
-    {
-      "player_name": "Blake Whiteheart",
-      "position": "TE",
-      "team": "CLE",
-      "value_score_prev": -5.171,
-      "value_score": -5.171,
-      "value_score_delta": 0.0,
-      "confidence": "Medium"
     },
     {
       "player_name": "Kyler Murray",
@@ -16299,13 +16353,13 @@
       "confidence": "Low"
     },
     {
-      "player_name": "Tyler Conklin",
-      "position": "TE",
-      "team": "NYJ",
-      "value_score_prev": -7.297,
-      "value_score": -7.297,
+      "player_name": "Mike Williams",
+      "position": "WR",
+      "team": "PIT",
+      "value_score_prev": 6.74,
+      "value_score": 6.74,
       "value_score_delta": 0.0,
-      "confidence": "High"
+      "confidence": "Low"
     },
     {
       "player_name": "Tucker Kraft",
@@ -16416,13 +16470,13 @@
       "confidence": "Medium"
     },
     {
-      "player_name": "Michael Wilson",
-      "position": "WR",
-      "team": "ARI",
-      "value_score_prev": -7.311,
-      "value_score": -7.311,
+      "player_name": "Payne Durham",
+      "position": "TE",
+      "team": "TB",
+      "value_score_prev": 6.606,
+      "value_score": 6.606,
       "value_score_delta": 0.0,
-      "confidence": "High"
+      "confidence": "Medium"
     },
     {
       "player_name": "Tank Dell",
@@ -16430,6 +16484,15 @@
       "team": "HOU",
       "value_score_prev": 5.011,
       "value_score": 5.011,
+      "value_score_delta": 0.0,
+      "confidence": "High"
+    },
+    {
+      "player_name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "value_score_prev": 0.451,
+      "value_score": 0.451,
       "value_score_delta": 0.0,
       "confidence": "High"
     },
@@ -16533,22 +16596,31 @@
       "confidence": "High"
     },
     {
-      "player_name": "Mitchell Trubisky",
-      "position": "QB",
-      "team": "BUF",
-      "value_score_prev": 0.56,
-      "value_score": 0.56,
+      "player_name": "Cody White",
+      "position": "WR",
+      "team": "SEA",
+      "value_score_prev": 1.644,
+      "value_score": 1.644,
       "value_score_delta": 0.0,
       "confidence": "Low"
     },
     {
-      "player_name": "Ricky Pearsall",
+      "player_name": "Casey Washington",
       "position": "WR",
-      "team": "SF",
-      "value_score_prev": 1.646,
-      "value_score": 1.646,
+      "team": "ATL",
+      "value_score_prev": 0.571,
+      "value_score": 0.571,
       "value_score_delta": 0.0,
-      "confidence": "Medium"
+      "confidence": "Low"
+    },
+    {
+      "player_name": "Trey McBride",
+      "position": "TE",
+      "team": "ARI",
+      "value_score_prev": 0.574,
+      "value_score": 0.574,
+      "value_score_delta": 0.0,
+      "confidence": "High"
     },
     {
       "player_name": "Britain Covey",
@@ -16650,22 +16722,22 @@
       "confidence": "High"
     },
     {
-      "player_name": "Simi Fehoko",
-      "position": "WR",
-      "team": "LAC",
-      "value_score_prev": 0.721,
-      "value_score": 0.721,
+      "player_name": "Mitchell Trubisky",
+      "position": "QB",
+      "team": "BUF",
+      "value_score_prev": 0.56,
+      "value_score": 0.56,
       "value_score_delta": 0.0,
-      "confidence": "Medium"
+      "confidence": "Low"
     },
     {
-      "player_name": "Trey McBride",
-      "position": "TE",
-      "team": "ARI",
-      "value_score_prev": 0.574,
-      "value_score": 0.574,
+      "player_name": "Samaje Perine",
+      "position": "RB",
+      "team": "KC",
+      "value_score_prev": 9.259,
+      "value_score": 9.259,
       "value_score_delta": 0.0,
-      "confidence": "High"
+      "confidence": "Medium"
     },
     {
       "player_name": "Rico Dowdle",
@@ -16767,20 +16839,20 @@
       "confidence": "High"
     },
     {
-      "player_name": "Treylon Burks",
-      "position": "WR",
-      "team": "TEN",
-      "value_score_prev": 0.285,
-      "value_score": 0.285,
+      "player_name": "Lamar Jackson",
+      "position": "QB",
+      "team": "BAL",
+      "value_score_prev": 0.437,
+      "value_score": 0.437,
       "value_score_delta": 0.0,
-      "confidence": "Low"
+      "confidence": "High"
     },
     {
-      "player_name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
-      "value_score_prev": 0.451,
-      "value_score": 0.451,
+      "player_name": "Cole Kmet",
+      "position": "TE",
+      "team": "CHI",
+      "value_score_prev": 0.288,
+      "value_score": 0.288,
       "value_score_delta": 0.0,
       "confidence": "High"
     },
@@ -16893,22 +16965,22 @@
       "confidence": "High"
     },
     {
-      "player_name": "Lamar Jackson",
-      "position": "QB",
-      "team": "BAL",
-      "value_score_prev": 0.437,
-      "value_score": 0.437,
+      "player_name": "Treylon Burks",
+      "position": "WR",
+      "team": "TEN",
+      "value_score_prev": 0.285,
+      "value_score": 0.285,
       "value_score_delta": 0.0,
-      "confidence": "High"
+      "confidence": "Low"
     },
     {
-      "player_name": "Cole Kmet",
+      "player_name": "Charlie Kolar",
       "position": "TE",
-      "team": "CHI",
-      "value_score_prev": 0.288,
-      "value_score": 0.288,
+      "team": "BAL",
+      "value_score_prev": 1.138,
+      "value_score": 1.138,
       "value_score_delta": 0.0,
-      "confidence": "High"
+      "confidence": "Medium"
     },
     {
       "player_name": "Geno Smith",
@@ -17010,20 +17082,20 @@
       "confidence": "Medium"
     },
     {
-      "player_name": "Keon Coleman",
+      "player_name": "Simi Fehoko",
       "position": "WR",
-      "team": "BUF",
-      "value_score_prev": 1.398,
-      "value_score": 1.398,
+      "team": "LAC",
+      "value_score_prev": 0.721,
+      "value_score": 0.721,
       "value_score_delta": 0.0,
       "confidence": "Medium"
     },
     {
-      "player_name": "Cam Grandy",
-      "position": "TE",
-      "team": "CIN",
-      "value_score_prev": 0.729,
-      "value_score": 0.729,
+      "player_name": "Anthony Gould",
+      "position": "WR",
+      "team": "IND",
+      "value_score_prev": 1.42,
+      "value_score": 1.42,
       "value_score_delta": 0.0,
       "confidence": "Low"
     },
@@ -17136,20 +17208,20 @@
       "confidence": "Medium"
     },
     {
-      "player_name": "Cody White",
+      "player_name": "Keon Coleman",
       "position": "WR",
-      "team": "SEA",
-      "value_score_prev": 1.644,
-      "value_score": 1.644,
+      "team": "BUF",
+      "value_score_prev": 1.398,
+      "value_score": 1.398,
       "value_score_delta": 0.0,
-      "confidence": "Low"
+      "confidence": "Medium"
     },
     {
-      "player_name": "Anthony Gould",
-      "position": "WR",
-      "team": "IND",
-      "value_score_prev": 1.42,
-      "value_score": 1.42,
+      "player_name": "Cam Grandy",
+      "position": "TE",
+      "team": "CIN",
+      "value_score_prev": 0.729,
+      "value_score": 0.729,
       "value_score_delta": 0.0,
       "confidence": "Low"
     },
@@ -17253,22 +17325,22 @@
       "confidence": "Low"
     },
     {
-      "player_name": "Bryce Young",
-      "position": "QB",
-      "team": "CAR",
-      "value_score_prev": 0.886,
-      "value_score": 0.886,
+      "player_name": "James Conner",
+      "position": "RB",
+      "team": "ARI",
+      "value_score_prev": 1.102,
+      "value_score": 1.102,
       "value_score_delta": 0.0,
       "confidence": "High"
     },
     {
-      "player_name": "Charlie Kolar",
-      "position": "TE",
-      "team": "BAL",
-      "value_score_prev": 1.138,
-      "value_score": 1.138,
+      "player_name": "Kene Nwangwu",
+      "position": "RB",
+      "team": "NYJ",
+      "value_score_prev": 0.893,
+      "value_score": 0.893,
       "value_score_delta": 0.0,
-      "confidence": "Medium"
+      "confidence": "Low"
     },
     {
       "player_name": "Mason Kinsey",
@@ -17379,22 +17451,13 @@
       "confidence": "Medium"
     },
     {
-      "player_name": "James Conner",
-      "position": "RB",
-      "team": "ARI",
-      "value_score_prev": 1.102,
-      "value_score": 1.102,
+      "player_name": "Bryce Young",
+      "position": "QB",
+      "team": "CAR",
+      "value_score_prev": 0.886,
+      "value_score": 0.886,
       "value_score_delta": 0.0,
       "confidence": "High"
-    },
-    {
-      "player_name": "Kene Nwangwu",
-      "position": "RB",
-      "team": "NYJ",
-      "value_score_prev": 0.893,
-      "value_score": 0.893,
-      "value_score_delta": 0.0,
-      "confidence": "Low"
     }
   ],
   "excluded_players": [

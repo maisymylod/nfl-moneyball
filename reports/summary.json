@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-31T11:42:37.057313+00:00",
-  "model_trained_at": "2026-07-31",
+  "generated_at": "2026-08-01T11:28:02.267274+00:00",
+  "model_trained_at": "2026-08-01",
   "current_season": 2024,
   "row_counts": {
     "total_current": 569,
@@ -492,20 +492,6 @@
       "contract_match_quality": "exact"
     },
     {
-      "player_name": "DJ Turner",
-      "position": "WR",
-      "team": "LV",
-      "age": 27.0,
-      "offense_snaps": 358.0,
-      "production": -10.369,
-      "expected_production": 1.891,
-      "production_residual": -12.259,
-      "apy_millions": 1.1,
-      "value_score": -11.145,
-      "confidence": "Medium",
-      "contract_match_quality": "exact"
-    },
-    {
       "player_name": "Elijah Moore",
       "position": "WR",
       "team": "CLE",
@@ -530,6 +516,20 @@
       "production_residual": -26.005,
       "apy_millions": 2.424,
       "value_score": -10.729,
+      "confidence": "Medium",
+      "contract_match_quality": "exact"
+    },
+    {
+      "player_name": "DJ Turner",
+      "position": "WR",
+      "team": "LV",
+      "age": 27.0,
+      "offense_snaps": 358.0,
+      "production": -10.369,
+      "expected_production": 1.891,
+      "production_residual": -12.259,
+      "apy_millions": 1.145,
+      "value_score": -10.707,
       "confidence": "Medium",
       "contract_match_quality": "exact"
     },
