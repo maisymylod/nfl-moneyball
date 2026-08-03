@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-02T11:28:20.282964+00:00",
-  "model_trained_at": "2026-08-02",
+  "generated_at": "2026-08-03T12:05:11.698332+00:00",
+  "model_trained_at": "2026-08-03",
   "current_season": 2024,
   "row_counts": {
     "total_current": 569,
-    "eligible_for_ranking": 250,
+    "eligible_for_ranking": 331,
     "low_sample": 159,
-    "no_match": 232
+    "no_match": 137
   },
   "model_metrics": {
     "QB": {
@@ -322,6 +322,20 @@
       "contract_match_quality": "exact"
     },
     {
+      "player_name": "Payne Durham",
+      "position": "TE",
+      "team": "TB",
+      "age": 24.0,
+      "offense_snaps": 445.0,
+      "production": 10.397,
+      "expected_production": 3.65,
+      "production_residual": 6.747,
+      "apy_millions": 1.021,
+      "value_score": 6.606,
+      "confidence": "Medium",
+      "contract_match_quality": "exact"
+    },
+    {
       "player_name": "Ameer Abdullah",
       "position": "RB",
       "team": "LV",
@@ -361,20 +375,6 @@
       "apy_millions": 1.402,
       "value_score": 6.113,
       "confidence": "Medium",
-      "contract_match_quality": "exact"
-    },
-    {
-      "player_name": "Josh Downs",
-      "position": "WR",
-      "team": "IND",
-      "age": 23.0,
-      "offense_snaps": 602.0,
-      "production": 24.725,
-      "expected_production": 16.392,
-      "production_residual": 8.333,
-      "apy_millions": 1.38,
-      "value_score": 6.038,
-      "confidence": "High",
       "contract_match_quality": "exact"
     }
   ],
@@ -618,6 +618,20 @@
       "contract_match_quality": "exact"
     },
     {
+      "player_name": "Tyler Conklin",
+      "position": "TE",
+      "team": "NYJ",
+      "age": 29.0,
+      "offense_snaps": 805.0,
+      "production": 6.806,
+      "expected_production": 16.293,
+      "production_residual": -9.487,
+      "apy_millions": 1.3,
+      "value_score": -7.297,
+      "confidence": "High",
+      "contract_match_quality": "exact"
+    },
+    {
       "player_name": "Caleb Williams",
       "position": "QB",
       "team": "CHI",
@@ -702,30 +716,16 @@
       "contract_match_quality": "exact"
     },
     {
-      "player_name": "Devin Singletary",
-      "position": "RB",
-      "team": "NYG",
-      "age": 26.0,
-      "offense_snaps": 380.0,
-      "production": -22.386,
-      "expected_production": -14.876,
-      "production_residual": -7.51,
-      "apy_millions": 1.3,
-      "value_score": -5.777,
-      "confidence": "Medium",
-      "contract_match_quality": "exact"
-    },
-    {
-      "player_name": "K.J. Osborn",
-      "position": "WR",
-      "team": "WAS",
-      "age": 27.0,
-      "offense_snaps": 251.0,
-      "production": -7.307,
-      "expected_production": -0.501,
-      "production_residual": -6.806,
-      "apy_millions": 1.215,
-      "value_score": -5.602,
+      "player_name": "Davis Allen",
+      "position": "TE",
+      "team": "LA",
+      "age": 23.0,
+      "offense_snaps": 335.0,
+      "production": -3.994,
+      "expected_production": 2.028,
+      "production_residual": -6.022,
+      "apy_millions": 1.021,
+      "value_score": -5.896,
       "confidence": "Medium",
       "contract_match_quality": "exact"
     }
@@ -1170,8 +1170,150 @@
       ]
     },
     "TE": {
-      "bargains": [],
-      "overpaid": []
+      "bargains": [
+        {
+          "player_name": "Payne Durham",
+          "position": "TE",
+          "team": "TB",
+          "age": 24.0,
+          "offense_snaps": 445.0,
+          "production": 10.397,
+          "expected_production": 3.65,
+          "production_residual": 6.747,
+          "apy_millions": 1.021,
+          "value_score": 6.606,
+          "confidence": "Medium",
+          "contract_match_quality": "exact"
+        },
+        {
+          "player_name": "Tucker Kraft",
+          "position": "TE",
+          "team": "GB",
+          "age": 23.0,
+          "offense_snaps": 989.0,
+          "production": 39.46,
+          "expected_production": 32.293,
+          "production_residual": 7.167,
+          "apy_millions": 1.384,
+          "value_score": 5.177,
+          "confidence": "High",
+          "contract_match_quality": "exact"
+        },
+        {
+          "player_name": "Stone Smartt",
+          "position": "TE",
+          "team": "LAC",
+          "age": 25.0,
+          "offense_snaps": 193.0,
+          "production": 7.436,
+          "expected_production": 1.017,
+          "production_residual": 6.419,
+          "apy_millions": 1.29,
+          "value_score": 4.976,
+          "confidence": "Low",
+          "contract_match_quality": "exact"
+        },
+        {
+          "player_name": "Tanner Hudson",
+          "position": "TE",
+          "team": "CIN",
+          "age": 29.0,
+          "offense_snaps": 119.0,
+          "production": 8.084,
+          "expected_production": 3.622,
+          "production_residual": 4.462,
+          "apy_millions": 1.35,
+          "value_score": 3.305,
+          "confidence": "Low",
+          "contract_match_quality": "exact"
+        },
+        {
+          "player_name": "Nate Adkins",
+          "position": "TE",
+          "team": "DEN",
+          "age": 25.0,
+          "offense_snaps": 429.0,
+          "production": 9.081,
+          "expected_production": 3.829,
+          "production_residual": 5.252,
+          "apy_millions": 1.635,
+          "value_score": 3.212,
+          "confidence": "Medium",
+          "contract_match_quality": "exact"
+        }
+      ],
+      "overpaid": [
+        {
+          "player_name": "Tyler Conklin",
+          "position": "TE",
+          "team": "NYJ",
+          "age": 29.0,
+          "offense_snaps": 805.0,
+          "production": 6.806,
+          "expected_production": 16.293,
+          "production_residual": -9.487,
+          "apy_millions": 1.3,
+          "value_score": -7.297,
+          "confidence": "High",
+          "contract_match_quality": "exact"
+        },
+        {
+          "player_name": "Davis Allen",
+          "position": "TE",
+          "team": "LA",
+          "age": 23.0,
+          "offense_snaps": 335.0,
+          "production": -3.994,
+          "expected_production": 2.028,
+          "production_residual": -6.022,
+          "apy_millions": 1.021,
+          "value_score": -5.896,
+          "confidence": "Medium",
+          "contract_match_quality": "exact"
+        },
+        {
+          "player_name": "Theo Johnson",
+          "position": "TE",
+          "team": "NYG",
+          "age": 23.0,
+          "offense_snaps": 683.0,
+          "production": 4.543,
+          "expected_production": 11.483,
+          "production_residual": -6.94,
+          "apy_millions": 1.213,
+          "value_score": -5.722,
+          "confidence": "Medium",
+          "contract_match_quality": "exact"
+        },
+        {
+          "player_name": "Blake Whiteheart",
+          "position": "TE",
+          "team": "CLE",
+          "age": 24.0,
+          "offense_snaps": 207.0,
+          "production": -3.757,
+          "expected_production": 2.164,
+          "production_residual": -5.92,
+          "apy_millions": 1.145,
+          "value_score": -5.171,
+          "confidence": "Medium",
+          "contract_match_quality": "exact"
+        },
+        {
+          "player_name": "Kylen Granson",
+          "position": "TE",
+          "team": "IND",
+          "age": 26.0,
+          "offense_snaps": 430.0,
+          "production": -8.418,
+          "expected_production": -1.845,
+          "production_residual": -6.573,
+          "apy_millions": 1.402,
+          "value_score": -4.687,
+          "confidence": "Medium",
+          "contract_match_quality": "exact"
+        }
+      ]
     }
   }
 }
