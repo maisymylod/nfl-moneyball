@@ -1,7 +1,13 @@
 position,contract_match_quality,count
-QB,no_match,78
-RB,no_match,145
-TE,no_match,119
+QB,exact,65
+QB,fuzzy_low,1
+QB,no_match,12
+RB,exact,91
+RB,fuzzy_low,5
+RB,no_match,49
+TE,exact,93
+TE,fuzzy_low,3
+TE,no_match,23
 WR,exact,173
 WR,fuzzy_low,6
 WR,no_match,48
