@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-07T11:17:44.841272+00:00",
+  "generated_at": "2026-08-08T11:08:42.253656+00:00",
   "current_season": 2024,
-  "model_trained_at": "2026-08-07",
+  "model_trained_at": "2026-08-08",
   "model_metrics": {
     "QB": {
       "n_train": 199,
@@ -13730,6 +13730,33 @@
       "te_r2": 0.871,
       "te_n_train": 275.0,
       "model_trained_at": "2026-08-07"
+    },
+    {
+      "run_at": "2026-08-08T11:08:39.942241+00:00",
+      "run_date": "2026-08-08",
+      "current_season": 2024.0,
+      "n_current": 569.0,
+      "n_eligible": 335.0,
+      "n_low_sample": 159.0,
+      "n_no_match": 130.0,
+      "n_with_contract": 439.0,
+      "qb_n_current": 78.0,
+      "qb_n_eligible": 46.0,
+      "rb_n_current": 145.0,
+      "rb_n_eligible": 69.0,
+      "wr_n_current": 227.0,
+      "wr_n_eligible": 139.0,
+      "te_n_current": 119.0,
+      "te_n_eligible": 81.0,
+      "qb_r2": 0.935,
+      "qb_n_train": 199.0,
+      "rb_r2": 0.727,
+      "rb_n_train": 326.0,
+      "wr_r2": 0.787,
+      "wr_n_train": 504.0,
+      "te_r2": 0.871,
+      "te_n_train": 275.0,
+      "model_trained_at": "2026-08-08"
     }
   ],
   "top_movers": [
@@ -14668,6 +14695,15 @@
       "value_score": 1.925,
       "value_score_delta": 0.0,
       "confidence": "Medium"
+    },
+    {
+      "player_name": "Raheem Blackshear",
+      "position": "RB",
+      "team": "CAR",
+      "value_score_prev": 1.85,
+      "value_score": 1.85,
+      "value_score_delta": 0.0,
+      "confidence": "Low"
     },
     {
       "player_name": "Cody Schrader",
@@ -16972,6 +17008,15 @@
       "value_score": -2.151,
       "value_score_delta": 0.0,
       "confidence": "Medium"
+    },
+    {
+      "player_name": "Deebo Samuel Sr.",
+      "position": "WR",
+      "team": "SF",
+      "value_score_prev": -2.194,
+      "value_score": -2.194,
+      "value_score_delta": 0.0,
+      "confidence": "High"
     },
     {
       "player_name": "Jalen McMillan",
