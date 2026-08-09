@@ -109,7 +109,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0037422,Kendric Pryor,WR,CIN,19.0,exact,100.0,low_sample
 2024,00-0036842,Kene Nwangwu,RB,NYJ,1.0,exact,100.0,low_sample
 2024,00-0038636,Kenny McIntosh,RB,SEA,75.0,no_match,57.14285714285714,low_sample
-2024,00-0036183,Kristian Wilkerson,WR,LV,45.0,no_match,70.58823529411764,low_sample
+2024,00-0036183,Kristian Wilkerson,WR,LV,45.0,exact,100.0,low_sample
 2024,00-0034577,Kyle Allen,QB,PIT,2.0,exact,100.0,low_sample
 2024,00-0029892,Kyle Juszczyk,RB,SF,,no_match,46.15384615384615,low_sample
 2024,00-0036928,Kyle Trask,QB,TB,19.0,no_match,63.63636363636363,low_sample
@@ -139,7 +139,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0037327,Skylar Thompson,QB,MIA,58.0,exact,100.0,low_sample
 2024,00-0038090,Skyy Moore,WR,KC,82.0,exact,100.0,low_sample
 2024,00-0036438,Stephen Sullivan,TE,CAR,8.0,no_match,64.51612903225806,low_sample
-2024,00-0034928,Steven Sims,WR,BAL,29.0,no_match,54.54545454545454,low_sample
+2024,00-0034928,Steven Sims,WR,BAL,29.0,no_match,60.86956521739131,low_sample
 2024,00-0037348,Tanner Conner,WR,MIA,25.0,exact,100.0,low_sample
 2024,00-0038400,Tanner McKee,QB,PHI,89.0,exact,100.0,low_sample
 2024,00-0037524,Tay Martin,WR,TEN,4.0,exact,100.0,low_sample
@@ -211,14 +211,12 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0031549,Nelson Agholor,WR,BAL,466.0,no_match,57.0,no_contract_match
 2024,00-0034791,Nick Chubb,RB,CLE,235.0,no_match,54.285714285714285,no_contract_match
 2024,00-0035639,Parris Campbell,WR,PHI,164.0,no_match,66.08695652173913,no_contract_match
-2024,00-0033439,Pharaoh Brown,TE,SEA,264.0,no_match,50.0,no_contract_match
 2024,00-0031687,Raheem Mostert,RB,MIA,278.0,no_match,64.51612903225806,no_contract_match
 2024,00-0038821,Rakim Jarrett,WR,TB,217.0,no_match,56.29629629629629,no_contract_match
 2024,00-0034407,Ray-Ray McCloud,WR,ATL,981.0,no_match,57.14285714285714,no_contract_match
 2024,00-0030431,Robert Woods,WR,HOU,404.0,no_match,56.00000000000001,no_contract_match
 2024,00-0034073,Ross Dwelley,TE,ATL,105.0,no_match,54.54545454545454,no_contract_match
 2024,00-0029263,Russell Wilson,QB,PIT,763.0,no_match,67.05882352941177,no_contract_match
-2024,00-0031588,Stefon Diggs,WR,HOU,431.0,no_match,60.86956521739131,no_contract_match
 2024,00-0032385,Sterling Shepard,WR,TB,536.0,no_match,62.06896551724138,no_contract_match
 2024,00-0033357,Taysom Hill,TE,NO,225.0,no_match,54.54545454545454,no_contract_match
 2024,00-0036984,Trey Sermon,RB,IND,245.0,no_match,72.72727272727273,no_contract_match
