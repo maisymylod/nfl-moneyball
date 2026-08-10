@@ -3,6 +3,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0036862,Ben Skowronek,WR,PIT,108.0,fuzzy_low,86.66666666666667,fuzzy_match_below_threshold
 2024,00-0038685,Chris Brooks,RB,GB,200.0,fuzzy_low,85.5,fuzzy_match_below_threshold
 2024,00-0035628,D'Ernest Johnson,RB,JAX,192.0,fuzzy_low,85.5,fuzzy_match_below_threshold
+2024,00-0034777,DJ Chark,WR,LAC,132.0,fuzzy_low,85.5,fuzzy_match_below_threshold
 2024,00-0026498,Matthew Stafford,QB,LA,1148.0,fuzzy_low,89.65517241379311,fuzzy_match_below_threshold
 2024,00-0033536,Mike Williams,WR,PIT,481.0,fuzzy_low,84.61538461538461,fuzzy_match_below_threshold
 2024,00-0033591,Noah Brown,WR,WAS,470.0,fuzzy_low,85.5,fuzzy_match_below_threshold
@@ -112,7 +113,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0036183,Kristian Wilkerson,WR,LV,45.0,exact,100.0,low_sample
 2024,00-0034577,Kyle Allen,QB,PIT,2.0,exact,100.0,low_sample
 2024,00-0029892,Kyle Juszczyk,RB,SF,,no_match,46.15384615384615,low_sample
-2024,00-0036928,Kyle Trask,QB,TB,19.0,no_match,63.63636363636363,low_sample
+2024,00-0036928,Kyle Trask,QB,TB,19.0,exact,100.0,low_sample
 2024,00-0036268,Laviska Shenault Jr.,WR,LAC,52.0,no_match,56.29629629629629,low_sample
 2024,00-0039920,Malachi Corley,WR,NYJ,83.0,exact,100.0,low_sample
 2024,00-0039811,MarShawn Lloyd,RB,GB,10.0,exact,100.0,low_sample
@@ -145,7 +146,7 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0037524,Tay Martin,WR,TEN,4.0,exact,100.0,low_sample
 2024,00-0031800,Taylor Heinicke,QB,LAC,22.0,no_match,63.33333333333332,low_sample
 2024,00-0039757,Terrell Jennings,RB,NE,38.0,exact,100.0,low_sample
-2024,00-0034177,Tim Boyle,QB,NYG,85.0,no_match,50.0,low_sample
+2024,00-0034177,Tim Boyle,QB,NYG,85.0,no_match,50.00000000000001,low_sample
 2024,00-0035544,Tom Kennedy,WR,DET,16.0,exact,100.0,low_sample
 2024,00-0038476,Tommy DeVito,QB,NYG,91.0,exact,100.0,low_sample
 2024,00-0035860,Tony Jones,RB,ARI,5.0,no_match,76.19047619047619,low_sample
@@ -177,7 +178,6 @@ season,player_id,player_name,position,team,offense_snaps,contract_match_quality,
 2024,00-0030578,Cordarrelle Patterson,RB,PIT,110.0,no_match,72.22222222222221,no_contract_match
 2024,00-0033282,Curtis Samuel,WR,BUF,441.0,no_match,63.33333333333332,no_contract_match
 2024,00-0033925,D'Onta Foreman,RB,CLE,195.0,no_match,69.23076923076923,no_contract_match
-2024,00-0034777,DJ Chark,WR,LAC,132.0,no_match,60.00000000000001,no_contract_match
 2024,00-0031763,DeAndre Carter,WR,CHI,137.0,no_match,66.66666666666667,no_contract_match
 2024,00-0030564,DeAndre Hopkins,WR,KC,582.0,no_match,73.33333333333334,no_contract_match
 2024,00-0031280,Derek Carr,QB,NO,604.0,no_match,60.0,no_contract_match
