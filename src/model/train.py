@@ -15,8 +15,6 @@ from src.model.features import FEATURE_COLS, SKILL_POSITIONS, TARGET, build_feat
 
 PROC = Path("data/processed")
 MODELS = Path("models")
-HISTORY = MODELS / "history"
-HISTORY_LIMIT = 30
 
 log = logging.getLogger(__name__)
 
@@ -43,7 +41,6 @@ def _fit(df_pos: pd.DataFrame) -> tuple[Pipeline, dict]:
 
 def train() -> None:
     MODELS.mkdir(parents=True, exist_ok=True)
-    HISTORY.mkdir(parents=True, exist_ok=True)
 
     raw = pd.read_parquet(PROC / "players.parquet")
     df = build_features(raw)
@@ -69,12 +66,6 @@ def train() -> None:
     }
     with open(MODELS / "latest.pkl", "wb") as f:
         pickle.dump(bundle, f)
-    with open(HISTORY / f"{today}.pkl", "wb") as f:
-        pickle.dump(bundle, f)
-
-    history = sorted(HISTORY.glob("*.pkl"))
-    for old in history[:-HISTORY_LIMIT]:
-        old.unlink()
 
     log.info("saved models -> %s", MODELS / "latest.pkl")
 

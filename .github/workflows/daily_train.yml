@@ -5,11 +5,19 @@ on:
     - cron: '0 11 * * *'   # 7am ET / 4am PT
   workflow_dispatch:
 
+# Two runs sharing one rolling release would race on the state tarball.
+concurrency:
+  group: daily-train
+  cancel-in-progress: false
+
+env:
+  STATE_TAG: daily-latest
+
 jobs:
   train:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write        # upload the model and state assets
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,6 +32,22 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      # run_history.parquet and snapshots/ accumulate across runs and are no
+      # longer in git, so the previous run's copies come from the release.
+      # A missing asset is only expected on the very first run.
+      - name: Restore accumulated state
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p data/processed
+          if gh release download "$STATE_TAG" --pattern state.tar.gz --dir . ; then
+            tar -xzf state.tar.gz
+            rm state.tar.gz
+            echo "restored state: $(ls data/processed/snapshots | wc -l) snapshots"
+          else
+            echo "no state asset on $STATE_TAG; starting a fresh history"
+          fi
 
       - name: Fetch stats
         run: python -m src.pipeline.fetch_stats
@@ -63,14 +87,60 @@ jobs:
           pip install pytest
           pytest -q
 
-      - name: Commit refreshed artifacts
+      # Publishing the artifacts instead of committing them keeps the default
+      # branch free of the ~1MB/day of regenerated binaries.
+      - name: Publish model and state
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          git config user.name "nfl-moneyball-bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/processed data/diagnostic models reports docs/data.json
-          if git diff --staged --quiet; then
-            echo "no changes"
+          tar -czf state.tar.gz \
+            data/processed/run_history.parquet \
+            data/processed/snapshots
+          cp models/latest.pkl model-latest.pkl
+
+          run_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          # Written to a file so the note text does not inherit YAML indentation.
+          {
+            echo "Rolling release. Both assets are replaced by each daily-train run."
+            echo
+            echo "Last updated $(date -u +%Y-%m-%d) by run [\`${GITHUB_RUN_ID}\`](${run_url})."
+            echo
+            echo "- \`model-latest.pkl\` - trained bundle (models, metrics, feature columns)."
+            echo "- \`state.tar.gz\` - accumulated \`run_history.parquet\` and daily \`snapshots/\`."
+          } > release-notes.md
+
+          if gh release view "$STATE_TAG" >/dev/null 2>&1; then
+            gh release edit "$STATE_TAG" --notes-file release-notes.md
           else
-            git commit -m "daily retrain $(date -u +%Y-%m-%d)"
-            git push
+            gh release create "$STATE_TAG" \
+              --title "Latest daily artifacts" \
+              --notes-file release-notes.md
           fi
+
+          gh release upload "$STATE_TAG" state.tar.gz model-latest.pkl --clobber
+
+      # docs/data.json is generated above, so Pages is deployed from the build
+      # rather than served from a committed copy on the default branch.
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy-pages:
+    needs: train
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # Switches the Pages source from the committed `main:/docs` folder to
+      # this workflow's artifact. No-op once it has run the first time.
+      - name: Configure Pages for Actions deployment
+        uses: actions/configure-pages@v5
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
