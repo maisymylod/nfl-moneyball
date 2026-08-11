@@ -136,10 +136,14 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      # Switches the Pages source from the committed `main:/docs` folder to
-      # this workflow's artifact. No-op once it has run the first time.
+      # `enablement` is what actually writes build_type=workflow; without it
+      # this step succeeds while Pages keeps serving the old `main:/docs`
+      # source, which 404s the dashboard now that data.json is not committed.
+      # Idempotent once set.
       - name: Configure Pages for Actions deployment
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Deploy to GitHub Pages
         id: deployment
