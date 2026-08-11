@@ -23,18 +23,24 @@ Public NFL contract data is messy. If missing values get imputed as $0, a player
 - Low-sample players (under 100 snaps) are excluded from the ranked table and routed to a diagnostic file for audit
 - Confidence labels surface uncertainty directly in the dashboard
 
-The diagnostic file (`data/diagnostic/excluded_players.csv`) is committed on every run so any excluded player can be traced.
+The diagnostic file (`data/diagnostic/excluded_players.csv`) is rewritten on every run so any excluded player can be traced.
 
 ## Autonomous daily retraining
 
 A GitHub Actions workflow (`.github/workflows/daily_train.yml`) runs every day at 11:00 UTC. Each run:
 
-1. Pulls fresh stats and contracts
-2. Refits the per-position model
-3. Rewrites the value rankings, diagnostic file, and summary report
-4. Commits the new artifacts back to `main`
+1. Restores the accumulated run history and daily snapshots from the `daily-latest` release
+2. Pulls fresh stats and contracts
+3. Refits the per-position model
+4. Rewrites the value rankings, diagnostic file, and summary report
+5. Publishes `model-latest.pkl` and the updated `state.tar.gz` back to the `daily-latest` release
+6. Deploys the regenerated `docs/` to GitHub Pages
 
-Streamlit Community Cloud auto-redeploys whenever `main` updates, so the dashboard reflects the latest training run within a few minutes.
+Every one of those outputs is derived from the code and the upstream data, so
+none of them are committed: the run publishes them as release assets and a Pages
+deployment instead of pushing ~1MB of regenerated binaries to `main` each day.
+That keeps `main` to source only, and keeps the artifacts versioned and
+downloadable rather than buried in the history.
 
 ## Running locally
 
@@ -64,13 +70,20 @@ streamlit run app/streamlit_app.py
 src/pipeline/    data fetchers and merger
 src/model/       feature builders, training, scoring
 src/reporting/   diagnostic, summary, history, dashboard_export
-app/             legacy Streamlit dashboard (optional)
+app/             legacy Streamlit dashboard (optional, run locally)
 docs/            static HTML dashboard served by GitHub Pages
-data/processed/  merged player table + run history + snapshots
-data/diagnostic/ excluded/flagged players for audit
-models/          fitted model artifacts
-reports/         summary.json
+data/processed/  merged player table + run history + snapshots  (generated)
+data/diagnostic/ excluded/flagged players for audit             (generated)
+models/          fitted model artifacts                         (generated)
+reports/         summary.json                                   (generated)
 ```
+
+The four directories marked *generated* are git-ignored. Run the pipeline below
+to produce them, or download `state.tar.gz` and `model-latest.pkl` from the
+[`daily-latest`](https://github.com/maisymylod/nfl-moneyball/releases/tag/daily-latest)
+release to start from the current accumulated history. The optional Streamlit
+Analytics tab needs `run_history.parquet` and `snapshots/`, so it wants the
+release copy (or enough local runs to build its own).
 
 ## Scope
 
